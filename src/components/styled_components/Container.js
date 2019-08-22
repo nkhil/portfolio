@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  
   max-width: ${props => {
-    if(props.width) return props.width;
+    if (props.width) return props.width;
     return '700px';
   }};
 
@@ -30,6 +29,6 @@ const Container = styled.div`
     if (props.small) return '15px';
     return '25px';
   }};
-`
+`;
 
 export default Container;
