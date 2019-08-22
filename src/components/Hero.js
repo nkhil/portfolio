@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from './styled_components/Container';
 import Flex from './styled_components/Flex';
-import image from '../../public/images/image.png';
+import image from '../../static/images/image.png';
 
 const HeroContainer = styled(Container)`
   min-height: 60vh;
