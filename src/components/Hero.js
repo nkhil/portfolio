@@ -41,7 +41,7 @@ const Hero = () => (
     <Container full>
       <Flex column alignCenter>
         <StyledImg src={image} alt="Nikhil" />
-        <h1>Hi, I'm Nikhil</h1>
+        <h1>Hi, I'm Nikhil.</h1>
         <p>I really like making things and solving interesting problems</p>
       </Flex>
     </Container>
