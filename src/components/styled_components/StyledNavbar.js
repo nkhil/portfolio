@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import Navbar from '../Navbar';
 
 const StyledNavbar = styled(Navbar)`
-  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
   ul {
     display: flex;
@@ -12,8 +12,11 @@ const StyledNavbar = styled(Navbar)`
   }
 
   li {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    &hover: {
+      text-decoration: underline;
+    }
 
     a {
       display: block;
