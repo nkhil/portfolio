@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 import Navbar from '../Navbar';
 
 const StyledNavbar = styled(Navbar)`
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
   ul {
     display: flex;
     list-style-type: none;
@@ -10,6 +12,9 @@ const StyledNavbar = styled(Navbar)`
   }
 
   li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
     a {
       display: block;
       padding: 1rem;
