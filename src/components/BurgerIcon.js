@@ -1,13 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { MdMenu } from 'react-icons/md';
+import Flex from './styled_components/Flex';
 
 const BurgerIcon = ({ handleIsOpen, className }) => (
-  <div className={className}>
+  <Flex className={className}>
     <button type="button" onClick={handleIsOpen}>
-      <MdMenu />
+    <div style={{color: 'white'}}>
+      <MdMenu size={32} />
+    </div>
     </button>
-  </div>
+  </Flex>
 );
 
 export default BurgerIcon;
