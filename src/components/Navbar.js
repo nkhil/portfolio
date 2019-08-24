@@ -32,12 +32,8 @@ export default function Navbar({ className }) {
     <Container full fullVertical className={className}>
       <Flex justifyEnd>
         <Div>
-          <Link to='/'>
-            <StyledImg
-              src={Logo}
-              alt="Nikhil"
-              style={{ alignContent: 'flex-start' }}
-            />
+          <Link to="/">
+            <StyledImg src={Logo} alt="Nikhil" style={{ alignContent: 'flex-start' }} />
           </Link>
         </Div>
         <Flex justifyCenter>
