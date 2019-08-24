@@ -7,9 +7,9 @@ import Container from './styled_components/Container';
 
 export default function Navbar({ className }) {
   return (
-    <Container fullVertical className={className}>
-      <Flex justifyCenter>
-        <Flex justifyBetween alignCenter style={{ padding: '1rem 1.25rem' }}>
+    <Container full fullVertical className={className}>
+      <Flex justifyEnd>
+        <Flex justifyEnd>
           <ul>
             {NavItems.map((item, i) => (
               <li key={i}>
