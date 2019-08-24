@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   max-width: ${props => {
     if (props.width) return props.width;
-    return '700px';
+    return '900px';
   }};
 
   margin: auto;
