@@ -3,7 +3,7 @@ import Navbar from '../Navbar';
 
 const StyledNavbar = styled(Navbar)`
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+  
   ul {
     display: flex;
     list-style-type: none;
@@ -14,16 +14,13 @@ const StyledNavbar = styled(Navbar)`
   li {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    &hover: {
-      text-decoration: underline;
-    }
 
     a {
       display: block;
-      padding: 1rem;
+      padding: 20px 20px;
       text-decoration: none;
       text-transform: capitalize;
-      color: black;
+      color: white;
     }
   }
 
