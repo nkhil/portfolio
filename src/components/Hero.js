@@ -14,25 +14,13 @@ const Hero = () => (
         <h1>Hi, I'm Nikhil.</h1>
         <p>I really like making things and solving interesting problems.</p>
         <Flex>
-          <a
-            href="https://www.github.com/nkhil"
-            rel="noopener norefferer"
-            target="_blank"
-          >
+          <a href="https://www.github.com/nkhil" rel="noopener norefferer" target="_blank">
             <button type="button">My Github</button>
           </a>
-          <a
-            href="https://registry.jsonresume.org/nkhil"
-            target="_blank"
-            rel="noopener norefferer"
-          >
+          <a href="https://registry.jsonresume.org/nkhil" target="_blank" rel="noopener norefferer">
             <button type="button">Download My CV</button>
           </a>
-          <a
-            href="https://www.linkedin.com/in/nikhilvijayan/"
-            target="_blank"
-            rel="noopener norefferer"
-          >
+          <a href="https://www.linkedin.com/in/nikhilvijayan/" target="_blank" rel="noopener norefferer">
             <button type="button">My LinkedIn</button>
           </a>
         </Flex>
