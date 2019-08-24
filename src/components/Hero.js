@@ -3,15 +3,18 @@ import styled from 'styled-components';
 import Container from './styled_components/Container';
 import Flex from './styled_components/Flex';
 import image from '../../static/images/image.png';
+import Colours from '../constants/colours';
 
 const HeroContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
 
   min-height: 60vh;
-  border: 1px solid blue;
   color: white;
   padding: 0;
-  background-color: #005aef;
+  margin: 0;
+  background-color: ${props => {
+    return props.bgColor;
+  }};
 
   h1 {
     font-family: 'Open Sans', sans-serif;
@@ -61,7 +64,7 @@ const StyledImg = styled.img`
 `;
 
 const Hero = () => (
-  <HeroContainer>
+  <HeroContainer bgColor={ Colours.primaryBlue }>
     <Container full>
       <Flex column alignCenter>
         <StyledImg src={image} alt="Nikhil" />
