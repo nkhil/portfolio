@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import GlobalStyles from './styled_components/StyledNormalise';
 import StyledNavbar from './styled_components/StyledNavbar';
 import StyledBurgerIcon from './styled_components/StyledBurgerIcon';
+import Flex from './styled_components/Flex';
+import Container from './styled_components/Container';
+import Colours from '../constants/colours';
 
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +14,12 @@ export default function Layout({ children }) {
   return (
     <>
       <GlobalStyles />
-      <StyledBurgerIcon handleIsOpen={handleIsOpen} />
+      <Flex justifyEnd style={{ backgroundColor: 'black'}}>
+        <StyledBurgerIcon handleIsOpen={handleIsOpen} />
+      </Flex>
+      <div style={{ backgroundColor: Colours.primaryBlue }}>
       <StyledNavbar isOpen={isOpen} />
+      </div>
       {children}
     </>
   );
