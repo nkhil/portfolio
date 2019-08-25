@@ -11,13 +11,6 @@ export default () => (
       <meta charSet="utf-8" />
       <title>Nikhil Vijayan - Hi, I'm Nikhil.</title>
       <link rel="canonical" href="http://mysite.com/example" />
-      script=
-      {[
-        {
-          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-          type: 'text/javascript',
-        },
-      ]}
     </Helmet>
     <Layout>
       <Hero />
