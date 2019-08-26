@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import Flex from './styled_components/Flex';
 import Container from './styled_components/Container';
 import Projects from '../constants/projects';
 import StyledGridItem from './styled_components/GridItem';
@@ -12,6 +11,7 @@ const GridContainer = styled.ul`
   grid-template-columns: repeat(auto-fill, 250px);
   grid-template-rows: auto;
   justify-content: space-around;
+  padding-inline-start: 0px;
 `;
 
 const StyledHeading = styled.div`
@@ -22,6 +22,7 @@ const StyledHeading = styled.div`
     font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #2e2e2e;
   }
 
   p {
@@ -29,23 +30,14 @@ const StyledHeading = styled.div`
     font-size: 1.8rem;
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 599px) {
+    p {
+      font-size: 1.2rem;
+      padding: 0 10px;
+    }
+  }
 `;
-
-// const GridItem = styled.div`
-//   justify-self: center;
-//   text-align: left;
-//   padding: 10px;
-//   background-color: #fff;
-//   margin: 0.5rem 0;
-//   position: relative;
-//   border-radius: 5px;
-//   border: 1px solid rgb(213, 213, 213);
-//   box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
-
-//   li {
-//     list-style-type: none;
-//   }
-// `;
 
 function Work({ className }) {
   return (
@@ -56,7 +48,12 @@ function Work({ className }) {
       </StyledHeading>
       <GridContainer className={className}>
         {Projects.map((project, index) => (
-          <StyledGridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
+          <StyledGridItem
+            index={index}
+            project={project}
+            key={index}
+            style={{ listStyleType: 'none' }}
+          />
         ))}
       </GridContainer>
     </Container>
