@@ -45,6 +45,18 @@ const MainContainer = styled.div`
       transform: scale(1.1);
     }
   }
+
+  @media screen and (max-width: 599px) {
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+  }
 `;
 
 export default MainContainer;
