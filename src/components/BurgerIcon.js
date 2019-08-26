@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { MdMenu } from 'react-icons/md';
+import { MdMenu, MdClose } from 'react-icons/md';
 import Flex from './styled_components/Flex';
 
-const BurgerIcon = ({ handleIsOpen, className }) => (
+const BurgerIcon = ({ isOpen, handleIsOpen, className }) => (
   <Flex className={className}>
     <button type="button" onClick={handleIsOpen}>
-    <div style={{color: 'white'}}>
-      <MdMenu size={32} />
-    </div>
+      <div style={{ color: 'white' }}>
+        {!isOpen ? <MdMenu size={35} /> : <MdClose size={35} />}
+      </div>
     </button>
   </Flex>
 );

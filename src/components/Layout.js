@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     <>
       <GlobalStyles />
       <Flex justifyEnd style={{ backgroundColor: 'black' }}>
-        <StyledBurgerIcon handleIsOpen={handleIsOpen} />
+        <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
       </Flex>
       <div style={{ backgroundColor: Colours.primaryBlue }}>
         <StyledNavbar isOpen={isOpen} />
