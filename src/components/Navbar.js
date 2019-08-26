@@ -18,6 +18,10 @@ const StyledImg = styled.img`
     if (props.margin) return props.margin;
     return '0px';
   }};
+
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
 `;
 
 const Div = styled.div`
@@ -36,7 +40,7 @@ export default function Navbar({ className }) {
             <StyledImg src={Logo} alt="Nikhil" style={{ alignContent: 'flex-start' }} />
           </Link>
         </Div>
-        <Flex justifyCenter>
+        <Flex justifyCenter fillAvailable>
           <ul>
             {NavItems.map((item, i) => (
               <li key={i}>
