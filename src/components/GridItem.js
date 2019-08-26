@@ -6,6 +6,7 @@ const GridItem = ({ project, index, className }) => {
 
   return (
     <li key={index} className={className} style={{ listStyleType: 'none' }}>
+      <img src="https://source.unsplash.com/298x200" alt="" />
       <h2>{title}</h2>
       <p>{blurb}</p>
       <ul>
