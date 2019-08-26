@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Flex = styled.div`
   display: flex;
+
   flex-wrap: ${props => {
     if (props.wrapReverse) return 'wrap-reverse';
     if (props.noWrap) return 'nowrap';
@@ -33,6 +34,15 @@ const Flex = styled.div`
     return 'stretch';
   }};
   flex-direction: ${props => (props.column ? 'column' : 'row')};
+  @media screen and (max-width: 599px) {
+    ${props => {
+      if (props.fillAvailable) {
+        return css`
+          width: 100%;
+        `;
+      }
+    }}
+  }
 `;
 
 export const Column = styled.div`
