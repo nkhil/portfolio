@@ -1,9 +1,9 @@
 ---
-path: '/blog-post-2'
+path: '/project-title-here'
 date: '13/02/2019'
-title: 'Understanding the module pattern in JavaScript'
+title: 'This is a Project1 post'
 something: 'something2'
-posttype: 'blog'
+posttype: 'project'
 category: 'javascript'
 description: 'I designed a train map for the Mumbai train system'
 tags:
@@ -11,4 +11,4 @@ tags:
   - 'hoisting'
 ---
 
-This is a test!
+This is some text that's related to the project that gives some context.

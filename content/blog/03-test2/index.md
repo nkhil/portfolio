@@ -1,7 +1,7 @@
 ---
 path: '/blah'
 date: '14/02/2019'
-title: 'BLAH BLAH BLAH'
+title: 'Understanding closures in JavaScript'
 something: 'something2'
 posttype: 'blog'
 category: 'javascript'
