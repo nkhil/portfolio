@@ -18,7 +18,7 @@ const Button = styled.button`
 
 const Hero = () => (
   <MainContainer bgColor={Colours.primaryBlue}>
-    <Container full>
+    <Container full backgroundColor={Colours.primaryBlue}>
       <Flex column alignCenter>
         <StyledImg src={image} alt="Nikhil" />
         <h1>Hi, I'm Nikhil.</h1>
