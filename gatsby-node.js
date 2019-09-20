@@ -9,8 +9,6 @@ exports.createPages = ({ actions, graphql }) => {
       allMarkdownRemark {
         edges {
           node {
-            html
-            id
             frontmatter {
               path
               title
@@ -49,18 +47,3 @@ exports.createPages = ({ actions, graphql }) => {
     });
   });
 };
-
-//   .then(res => {
-//     if (res.errors) {
-//       return Promise.reject(res.errors);
-//     }
-//     res.data.allMarkdownRemark.edges.forEach(edge => {
-//       createPage({
-//         // Path for this page — required
-//         path: `${edge.node.frontmatter.path}`,
-//         component: postTemplate,
-//         context: {},
-//       })
-//     });
-//   }
-// };
