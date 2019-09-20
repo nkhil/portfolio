@@ -6,9 +6,7 @@ import Flex from './styled_components/Flex';
 const BurgerIcon = ({ isOpen, handleIsOpen, className }) => (
   <Flex className={className}>
     <button type="button" onClick={handleIsOpen}>
-      <div style={{ color: 'white' }}>
-        {!isOpen ? <MdMenu size={35} /> : <MdClose size={35} />}
-      </div>
+      <div style={{ color: 'white' }}>{!isOpen ? <MdMenu size={35} /> : <MdClose size={35} />}</div>
     </button>
   </Flex>
 );
