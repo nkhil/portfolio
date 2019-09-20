@@ -1,19 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Link } from 'gatsby';
 
 const GridItem = ({ project, index, className }) => {
-  const { title, blurb, tags } = project;
-
+  const { path, title, tags, description } = project.node.frontmatter;
   return (
     <li key={index} className={className} style={{ listStyleType: 'none' }}>
-      <img src="https://source.unsplash.com/298x200" alt="" />
-      <h2>{title}</h2>
-      <p>{blurb}</p>
-      <ul>
-        {tags.map((tag, i) => (
-          <li key={i}>{tag}</li>
-        ))}
-      </ul>
+      <Link style={{ textDecoration: 'none', color: 'inherit' }} to={`${path}`}>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </Link>
     </li>
   );
 };
