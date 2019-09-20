@@ -4,20 +4,19 @@ import GlobalStyles from './styled_components/StyledNormalise';
 import StyledNavbar from './styled_components/StyledNavbar';
 import StyledBurgerIcon from './styled_components/StyledBurgerIcon';
 import Flex from './styled_components/Flex';
-import Colours from '../constants/colours';
 
-export default function Layout({ children }) {
+export default function Layout({ children, backgroundColor, navlinkColor }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => setIsOpen(!isOpen);
 
   return (
     <>
       <GlobalStyles />
-      <Flex justifyEnd style={{ backgroundColor: 'black' }}>
+      <Flex justifyEnd style={{ backgroundColor }}>
         <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
       </Flex>
-      <div style={{ backgroundColor: Colours.primaryBlue }}>
-        <StyledNavbar isOpen={isOpen} />
+      <div style={{ backgroundColor }}>
+        <StyledNavbar isOpen={isOpen} backgroundColor={backgroundColor} navlinkColor={navlinkColor} />
       </div>
       {children}
     </>
