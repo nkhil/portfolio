@@ -6,6 +6,11 @@ const Container = styled.div`
     return '980px';
   }};
 
+  background-color: ${props => {
+    if (props.backgroundColor) return props.backgroundColor;
+    return '#fff';
+  }};
+
   margin: auto;
 
   padding-left: ${props => {
