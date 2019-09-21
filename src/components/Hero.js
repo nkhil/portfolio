@@ -28,7 +28,7 @@ const Hero = () => (
             <Button type="button">My Github</Button>
           </a>
           <a href="https://registry.jsonresume.org/nkhil" target="_blank" rel="noopener norefferer">
-            <Button>Download My CV</Button>
+            <Button>Download my CV</Button>
           </a>
           <a href="https://www.linkedin.com/in/nikhilvijayan/" target="_blank" rel="noopener norefferer">
             <Button type="button">My LinkedIn</Button>
