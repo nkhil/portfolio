@@ -15,9 +15,11 @@ const StyledNavbar = styled(Navbar)`
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 
-    &:hover {
-      cursor: pointer;
-      border-bottom: 3px solid white;
+    a {
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid white;
+      }
     }
 
     a {
@@ -25,7 +27,10 @@ const StyledNavbar = styled(Navbar)`
       padding: 20px 20px 10px 20px;
       text-decoration: none;
       text-transform: capitalize;
-      color: white;
+      color: ${props => {
+        if (props.navlinkColor) return props.navlinkColor;
+        return '#fff';
+      }};
     }
   }
 
@@ -50,9 +55,15 @@ const StyledNavbar = styled(Navbar)`
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      text-align: center;
+      text-align: left;
       margin: 0;
       padding: 0;
+    }
+
+    li {
+      font-size: 1.5rem;
+      width: 100vw;
+      display: flex;
     }
   }
 `;
