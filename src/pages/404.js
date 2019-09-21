@@ -9,7 +9,7 @@ const NotFound = () => (
       <title>OH NO - 404</title>
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
-    <Layout>
+    <Layout navlinkColor="#000">
       <h1>Not Found</h1>
     </Layout>
   </>
