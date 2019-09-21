@@ -72,7 +72,7 @@ export default function Template({
 
   return (
     <>
-      <Layout navlinkColor="#000" />
+      <Layout navbarWidth="750px" navlinkColor="#000" />
       <BlogContainer>
         <h1>{post.frontmatter.title}</h1>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />

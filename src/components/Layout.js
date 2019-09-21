@@ -5,7 +5,7 @@ import StyledNavbar from './styled_components/StyledNavbar';
 import StyledBurgerIcon from './styled_components/StyledBurgerIcon';
 import Flex from './styled_components/Flex';
 
-export default function Layout({ children, backgroundColor, navlinkColor }) {
+export default function Layout({ children, backgroundColor, navlinkColor, navbarWidth }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => setIsOpen(!isOpen);
 
@@ -16,7 +16,12 @@ export default function Layout({ children, backgroundColor, navlinkColor }) {
         <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
       </Flex>
       <div style={{ backgroundColor }}>
-        <StyledNavbar isOpen={isOpen} backgroundColor={backgroundColor} navlinkColor={navlinkColor} />
+        <StyledNavbar
+          width={navbarWidth}
+          isOpen={isOpen}
+          backgroundColor={backgroundColor}
+          navlinkColor={navlinkColor}
+        />
       </div>
       {children}
     </>

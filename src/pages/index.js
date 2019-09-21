@@ -11,15 +11,13 @@ import Colours from '../constants/colours';
 
 export default ({ data }) => (
   <>
-    {/* {console.log('+++++++++++++ \n: data.project.edges', data.project.edges)}
-    {console.log('+++++++++++++ \n: data.blog.edges', data.blog.edges)} */}
     <Helmet>
       <meta charSet="utf-8" />
       <title>Nikhil Vijayan - Hi, I'm Nikhil.</title>
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 
-    <Layout backgroundColor={Colours.primaryBlue}>
+    <Layout navbarWidth="800px" backgroundColor={Colours.primaryBlue}>
       <Hero />
       <Work data={data.project.edges} />
       <BlogPost data={data.blog.edges} />

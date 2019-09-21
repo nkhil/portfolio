@@ -19,7 +19,7 @@ const StyledImg = styled.img`
     if (props.margin) return props.margin;
     return '0px';
   }};
-  margin-left: 100px;
+  margin-left: 10px;
 
   @media screen and (max-width: 599px) {
     display: none;
@@ -35,9 +35,9 @@ const StyledArrow = styled(MdKeyboardArrowRight)`
   }
 `;
 
-export default function Navbar({ className, backgroundColor }) {
+export default function Navbar({ className, backgroundColor, width }) {
   return (
-    <Container width="850px" full fullVertical backgroundColor={backgroundColor} className={className}>
+    <Container width={width} full fullVertical backgroundColor={backgroundColor} className={className}>
       <Flex justifyEnd>
         <Flex style={{ marginRight: 'auto' }}>
           <Link to="/">
