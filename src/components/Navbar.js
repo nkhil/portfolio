@@ -37,7 +37,7 @@ const StyledArrow = styled(MdKeyboardArrowRight)`
 
 export default function Navbar({ className, backgroundColor }) {
   return (
-    <Container full fullVertical backgroundColor={backgroundColor} className={className}>
+    <Container width="850px" full fullVertical backgroundColor={backgroundColor} className={className}>
       <Flex justifyEnd>
         <Flex style={{ marginRight: 'auto' }}>
           <Link to="/">
