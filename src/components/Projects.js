@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Container from './styled_components/Container';
 import GridItem from './styled_components/GridItem';
 import MainContainer from './styled_components/MainContainer';
 import GridContainer from './styled_components/GridContainer';
+import Button from './styled_components/Button';
 
 const StyledHeading = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
@@ -48,6 +50,11 @@ function Work({ data }) {
             <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
           ))}
         </GridContainer>
+        <StyledHeading style={{ textAlign: 'center', paddingTop: '20px', paddingBottom: '80px' }}>
+          <Link to="/work">
+            <Button type="button">See all my projects</Button>
+          </Link>
+        </StyledHeading>
       </Container>
     </MainContainer>
   );
