@@ -4,12 +4,14 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import BlogPost from '../components/styled_components/BlogPost';
 import Colours from '../constants/colours';
+import GridContainer from '../components/styled_components/GridContainer';
+import GridItem from '../components/styled_components/GridItem';
+import Container from '../components/styled_components/Container';
 
 export default function Work({ data }) {
-  const { edges } = data.project;
+  const { edges } = data.projects;
+  console.log('TCL: Work -> edges', edges);
 
   return (
     <>
@@ -18,26 +20,21 @@ export default function Work({ data }) {
         <title>My Projects</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-
-      <Layout navbarWidth="800px" backgroundColor={Colours.primaryBlue}>
-        {/* {console.log(data.project.edges)} */}
-        {console.log('edges', edges)}
-
-        {/* <Hero />
-      <Work data={data.project} /> */}
-        <ul>
-          {edges.map(({ node }) => (
-            <li>{node.frontmatter.title}</li>
+      <Layout navbarWidth="750px" navlinkColor="#000"></Layout>
+      <Container full backgroundColor="#fff" fullVertical>
+        <GridContainer>
+          {edges.map((project, index) => (
+            <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
           ))}
-        </ul>
-      </Layout>
+        </GridContainer>
+      </Container>
     </>
   );
 }
 
 export const pageQuery = graphql`
   query ProjectQuery {
-    project: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/.*md$/" } }) {
+    projects: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/.*md$/" } }) {
       edges {
         node {
           frontmatter {
