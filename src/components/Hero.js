@@ -6,15 +6,7 @@ import image from '../../static/images/image.png';
 import Colours from '../constants/colours';
 import MainContainer from './styled_components/MainContainer';
 import StyledImg from './styled_components/StyledImg';
-
-const Button = styled.button`
-  font-size: 1em;
-  border-radius: 3px;
-
-  && {
-    margin: 15px 10px;
-  }
-`;
+import Button from './styled_components/Button';
 
 const Hero = () => (
   <MainContainer bgColor={Colours.primaryBlue}>
