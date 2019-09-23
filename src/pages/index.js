@@ -17,7 +17,7 @@ export default ({ data }) => (
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 
-    <Layout navbarWidth="800px" backgroundColor={Colours.primaryBlue}>
+    <Layout navbarWidth="750px" backgroundColor={Colours.primaryBlue}>
       <Hero />
       <Work data={data.project.edges} />
       <BlogPost data={data.blog.edges} />
