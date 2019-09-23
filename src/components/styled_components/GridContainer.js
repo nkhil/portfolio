@@ -7,7 +7,7 @@ const GridContainer = styled.ul`
   grid-template-rows: auto;
   justify-content: space-around;
   padding-inline-start: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   margin-bottom: 0;
 `;
 
