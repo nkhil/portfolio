@@ -54,6 +54,8 @@ const BlogContainer = styled.div`
   }
 
   @media screen and (max-width: 599px) {
+    padding: 10px 15px;
+
     h1 {
       font-size: 3rem;
     }

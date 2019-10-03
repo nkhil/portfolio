@@ -13,7 +13,7 @@ export default function Layout({ children, backgroundColor, navlinkColor, navbar
     <>
       <GlobalStyles />
       <Flex justifyEnd style={{ backgroundColor }}>
-        <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
+        <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} colour={navlinkColor} />
       </Flex>
       <div style={{ backgroundColor }}>
         <StyledNavbar

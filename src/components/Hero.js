@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import styled from 'styled-components';
 import Container from './styled_components/Container';
 import Flex from './styled_components/Flex';
 import image from '../../static/images/image.png';
@@ -8,15 +8,15 @@ import MainContainer from './styled_components/MainContainer';
 import StyledImg from './styled_components/StyledImg';
 import Button from './styled_components/Button';
 
-const Hero = () => (
-  <MainContainer bgColor={Colours.primaryBlue}>
-    <Container full backgroundColor={Colours.primaryBlue}>
+const Hero = ({ className }) => (
+  <MainContainer bgColor={Colours.primaryBlue} className={className}>
+    <Container full backgroundColor={Colours.primaryBlue} className={className}>
       <Flex column alignCenter>
         <StyledImg src={image} alt="Nikhil" />
         <h1>Hi, I'm Nikhil.</h1>
         <p>I really like making things and solving interesting problems.</p>
         <Flex justifyCenter>
-          <a href="https://www.github.com/nkhil" rel="noopener norefferer" target="_blank">
+          <a href="https://www.github.com/nkhil" rel="noopener norefferer" target="_blank" rel="noopener noreferrer">
             <Button type="button">My Github</Button>
           </a>
           <a href="https://registry.jsonresume.org/nkhil" target="_blank" rel="noopener norefferer">

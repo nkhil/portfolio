@@ -4,7 +4,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
-import Hero from '../components/Hero';
+import Hero from '../components/styled_components/Hero';
 import Work from '../components/Projects';
 import BlogPost from '../components/styled_components/BlogPost';
 import Colours from '../constants/colours';
