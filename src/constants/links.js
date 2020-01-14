@@ -5,14 +5,10 @@ export default [
   },
   {
     path: '/work',
-    name: 'Work',
+    name: 'Projects',
   },
   {
     path: '/blog',
     name: 'Blog',
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
   },
 ];
