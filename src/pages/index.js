@@ -17,7 +17,7 @@ export default ({ data }) => (
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 
-    <Layout navbarWidth="750px" backgroundColor={Colours.primaryBlue}>
+    <Layout navbarWidth="750px">
       <Hero />
       <Work data={data.project.edges} />
       <BlogPost data={data.blog.edges} />
@@ -36,6 +36,13 @@ export const pageQuery = graphql`
             path
             date
             tags
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           html
           id
