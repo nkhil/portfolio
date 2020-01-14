@@ -1,28 +1,21 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import GlobalStyles from './styled_components/StyledNormalise';
-import StyledNavbar from './styled_components/StyledNavbar';
+import Navbar from './Navbar';
 import StyledBurgerIcon from './styled_components/StyledBurgerIcon';
 import Flex from './styled_components/Flex';
 
-export default function Layout({ children, backgroundColor, navlinkColor, navbarWidth }) {
+export default function Layout({ children, navlinkColor, navbarWidth }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => setIsOpen(!isOpen);
 
   return (
     <>
       <GlobalStyles />
-      <Flex justifyEnd style={{ backgroundColor }}>
+      <Flex justifyEnd>
         <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} colour={navlinkColor} />
       </Flex>
-      <div style={{ backgroundColor }}>
-        <StyledNavbar
-          width={navbarWidth}
-          isOpen={isOpen}
-          backgroundColor={backgroundColor}
-          navlinkColor={navlinkColor}
-        />
-      </div>
+      <Navbar width={navbarWidth} isOpen={isOpen} navlinkColor={navlinkColor} />
       {children}
     </>
   );
