@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,6 +23,5 @@ module.exports = {
         path: `${__dirname}/content/projects`,
       },
     },
-    `gatsby-transformer-remark`,
   ],
 };
