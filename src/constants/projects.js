@@ -1,87 +1,42 @@
-export default [
+import raspberry from '../../static/images/raspberry.png';
+import stts from '../../static/images/stts.png';
+import fixtureMaker from '../../static/images/fixture-maker-icon.png';
+
+export const featuredProjects = [
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Bombay Train Map',
-    blurb: 'I made a map for the Bombay train system',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['Design'],
+    title: 'Raspberry pi weather thing',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/project-title-here',
+    src: raspberry,
   },
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Brexit means Breadsticks',
-    blurb:
-      "A Chrome extension that turns the word 'brexit' into 'breadsticks' on all web pages.",
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript'],
+    title: 'HTTP Status code checker',
+    description: 'Offline reference tool for quickly referencing HTTP status codes. ',
+    path: '/project-two-comes-here',
+    src: stts,
   },
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'UK Bank Holidays',
-    blurb: 'A fully tested React app that displays',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript', 'React'],
+    title: 'WIP: Fixture Maker',
+    description: 'npm module to programatically create fixture files in .json or .js format.',
+    path: '/',
+    src: fixtureMaker,
   },
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Pineapple Journal',
-    blurb: 'A full-stack journaling app',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript', 'React'],
+    title: 'Raspberry pi weather thing',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/',
+    src: raspberry,
   },
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Pineapple Journal',
-    blurb: 'A full-stack journaling app',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript', 'React'],
+    title: 'Raspberry pi weather thing',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/',
+    src: raspberry,
   },
   {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Pineapple Journal',
-    blurb: 'A full-stack journaling app',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript', 'React'],
-  },
-  {
-    image: 'https://www.placecage.com/300/300',
-    title: 'Pineapple Journal',
-    blurb: 'A full-stack journaling app',
-    description:
-      "Love, exciting and new. Come aboard, we're expecting you. Love, life's sweetest reward. Let it flow, it floats back to you. The Love Boat soon will be making another run. The Love Boat promises something for everyone. Set a course for adventure, your mind on a new romance. Love won't hurt anymore. It's an open smile on a friendly shore. Yes, love! It's love!",
-    links: {
-      github: 'https://github.com/nkhil',
-      liveLink: 'https://google.com',
-    },
-    tags: ['JavaScript', 'React'],
+    title: 'Raspberry pi weather thing',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/',
+    src: raspberry,
   },
 ];

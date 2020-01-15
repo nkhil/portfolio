@@ -11,15 +11,33 @@ const StyledGridItem = styled(GridItem)`
   background-color: #fff;
   margin: 0.5rem 0;
   position: relative;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding-top: 20px;
   /* border: 1px solid rgb(213, 213, 213); */
   box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5780F9;
+    height: 120px;
+    width: 120px;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    align-self: center;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    margin: auto;
+  }
 
   h2 {
     padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1;
+    font-size: 1.7rem;
+    line-height: 1.2;
     text-align: left;
     margin: 20px 0 0px 0;
     color: #2e2e2e;
@@ -28,7 +46,7 @@ const StyledGridItem = styled(GridItem)`
   p {
     padding: 0px 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-align: left;
     line-height: 1.5;
     margin: 0px 0px 20px 0px;
@@ -51,11 +69,6 @@ const StyledGridItem = styled(GridItem)`
     &:hover {
       cursor: default;
     }
-  }
-
-  img {
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: 1px solid rgb(218, 218, 218);
   }
 `;
 
