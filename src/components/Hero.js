@@ -3,10 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImage from './HeroImage';
-import image from '../../static/images/image.png';
 import Colours from '../constants/colours';
-import StyledImg from './styled_components/StyledImg';
-import Button from './styled_components/Button';
 import width from '../constants/width';
 
 const Hero = ({ className }) => (
@@ -43,7 +40,8 @@ const StyledHero = styled(Hero)`
       .hero-container-strap-paragraph {
         width: 350px;
         p {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
+          line-height: 1.3;
           color: ${Colours.bodyGrey};
           margin: 5px;
         }

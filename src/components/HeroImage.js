@@ -20,7 +20,7 @@ const StyledHeroImage = styled(HeroImage)`
   img {
     width: 180px;
     border-radius: 50%;
-    border: 10px solid ${colours.primaryBlue};
+    border: 7px solid ${colours.primaryBlue};
   }
 `;
 
