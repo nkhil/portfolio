@@ -46,7 +46,7 @@ const StyledNavbar = styled(Navbar)`
   background-color: #fff;
 
   .navbar {
-    min-width: ${width.containerWidth};
+    min-width: ${width.navbarWidth};
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -68,7 +68,7 @@ const StyledNavbar = styled(Navbar)`
     a {
       &:hover {
         cursor: pointer;
-        border-bottom: 3px solid black;
+        color: ${Colours.primaryBlue};
       }
     }
 
@@ -78,7 +78,6 @@ const StyledNavbar = styled(Navbar)`
       text-decoration: none;
       text-transform: capitalize;
       color: black;
-      border-bottom: 3px solid transparent;
     }
   }
 
