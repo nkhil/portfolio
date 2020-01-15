@@ -35,14 +35,6 @@ export const pageQuery = graphql`
             description
             path
             date
-            tags
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           html
           id
