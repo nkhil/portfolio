@@ -24,6 +24,9 @@ function Projects({ data, className }) {
             <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
           ))}
         </GridContainer>
+        <div className="section-link">
+          <Link to="/work">See all projects</Link>
+        </div>
       </div>
     </div>
   );
@@ -35,6 +38,7 @@ const StyledProjects = styled(Projects)`
   .projects-container {
     max-width: ${width.containerWidth};
     margin: auto;
+    padding: 50px 0;
   }
 
   .section-header {
@@ -62,6 +66,23 @@ const StyledProjects = styled(Projects)`
       p {
         font-size: 1.2rem;
         padding: 0 10px;
+      }
+    }
+  }
+
+  .section-link {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+
+    a {
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: ${colours.primaryBlue};
+      padding-bottom: 5px;
+
+      &:hover {
+        border-bottom: 1px solid ${colours.primaryBlue};
       }
     }
   }
