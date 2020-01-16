@@ -4,17 +4,20 @@ import GridItem from '../GridItem';
 const StyledGridItem = styled(GridItem)`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
 
-  width: 300px;
+  width: 280px;
   justify-self: center;
   text-align: left;
   /* padding: 20px; */
   background-color: #fff;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   position: relative;
   border-radius: 15px;
+  border: 1px solid #E8E8E8;
   padding-top: 20px;
   /* border: 1px solid rgb(213, 213, 213); */
-  box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
+  }
 
   .icon {
     display: flex;
@@ -36,7 +39,7 @@ const StyledGridItem = styled(GridItem)`
   h2 {
     padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     text-align: left;
     margin: 20px 0 0px 0;
@@ -67,7 +70,7 @@ const StyledGridItem = styled(GridItem)`
     padding: 8px;
 
     &:hover {
-      cursor: default;
+      cursor: pointer;
     }
   }
 `;
