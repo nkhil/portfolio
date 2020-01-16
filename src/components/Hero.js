@@ -65,16 +65,19 @@ const StyledHero = styled(Hero)`
       flex-direction: column;
 
       .hero-container-strap {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
 
         h1 {
           font-size: 3rem;
           text-align: center;
         }
+        .hero-container-strap-paragraph {
+          width: 300px;
 
-        p {
-          text-align: center;
-          font-size: 1.2rem;
+          p {
+            text-align: center;
+            font-size: 1.5rem;
+          }
         }
       }
     }
