@@ -1,10 +1,11 @@
 import raspberry from '../../static/images/raspberry.png';
 import stts from '../../static/images/stts.png';
-import fixtureMaker from '../../static/images/fixture-maker-icon.png';
+import fixtureMaker from '../../static/images/fixture.png';
+import school from '../../static/images/school.png';
 
 export const featuredProjects = [
   {
-    title: 'Raspberry pi weather thing',
+    title: 'Raspberry pi weather display',
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/project-title-here',
     src: raspberry,
@@ -22,20 +23,20 @@ export const featuredProjects = [
     src: fixtureMaker,
   },
   {
-    title: 'Raspberry pi weather thing',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    title: 'Responsive website for a school',
+    description: "I designed and built a responsive site for a friend's school using Gatsby JS",
+    path: '/',
+    src: school,
+  },
+  {
+    title: 'Bombay train map',
+    description: 'I designed a London-inspired map for the train lines in Bombay.',
     path: '/',
     src: raspberry,
   },
   {
-    title: 'Raspberry pi weather thing',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
-    path: '/',
-    src: raspberry,
-  },
-  {
-    title: 'Raspberry pi weather thing',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    title: 'Brexit means Breadsticks',
+    description: 'A Chrome extension that turns every mention of Brexit into Breadsticks.',
     path: '/',
     src: raspberry,
   },
