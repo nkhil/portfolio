@@ -2,7 +2,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import Emoji from 'a11y-react-emoji';
 import HeroImage from './HeroImage';
 import Colours from '../constants/colours';
 import width from '../constants/width';
