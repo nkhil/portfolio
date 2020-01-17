@@ -61,8 +61,8 @@ const StyledHero = styled(Hero)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .hero-container {
-      display: flex;
       flex-direction: column;
+      max-width: 100%;
 
       .hero-container-strap {
         margin: 20px 0 0 0;
@@ -73,7 +73,7 @@ const StyledHero = styled(Hero)`
         }
         .hero-container-strap-paragraph {
           width: 300px;
-
+          margin-left: 0;
           p {
             text-align: center;
             font-size: 1.5rem;

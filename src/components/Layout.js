@@ -14,8 +14,8 @@ export default function Layout({ children, navlinkColor, navbarWidth }) {
       <GlobalStyles />
       <Flex justifyEnd>
         <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
+        <Navbar width={navbarWidth} isOpen={isOpen} navlinkColor={navlinkColor} />
       </Flex>
-      <Navbar width={navbarWidth} isOpen={isOpen} navlinkColor={navlinkColor} />
       {children}
     </>
   );

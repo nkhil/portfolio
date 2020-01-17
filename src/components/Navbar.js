@@ -42,8 +42,8 @@ const StyledNavbar = styled(Navbar)`
 
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e2e2e2;
   background-color: #fff;
+  margin: auto;
 
   .navbar {
     min-width: ${width.navbarWidth};
@@ -111,6 +111,7 @@ const StyledNavbar = styled(Navbar)`
       font-size: 1.5rem;
       width: 100vw;
       display: flex;
+      justify-content: center;
     }
   }
 `;
