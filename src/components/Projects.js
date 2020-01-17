@@ -2,11 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Container from './styled_components/Container';
 import GridItem from './styled_components/GridItem';
-import MainContainer from './styled_components/MainContainer';
 import GridContainer from './styled_components/GridContainer';
-import Button from './styled_components/Button';
 import colours from '../constants/colours';
 import width from '../constants/width';
 import { featuredProjects } from '../constants/projects';
@@ -72,7 +69,7 @@ const StyledProjects = styled(Projects)`
 
   .section-link {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 50px 0;
 
     a {
