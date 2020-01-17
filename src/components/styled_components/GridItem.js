@@ -7,14 +7,13 @@ const StyledGridItem = styled(GridItem)`
   width: 280px;
   justify-self: center;
   text-align: left;
-  /* padding: 20px; */
   background-color: #fff;
   margin: 1rem 0;
   position: relative;
   border-radius: 15px;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   padding-top: 20px;
-  /* border: 1px solid rgb(213, 213, 213); */
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
   }
