@@ -12,9 +12,7 @@ const Hero = ({ className }) => (
     <div className="hero-container">
       <HeroImage />
       <div className="hero-container-strap">
-        <h1>
-          Hey, I'm Nikhil <Emoji symbol="👋" label="wave" /> 
-        </h1>
+        <h1>Hey, I'm Nikhil</h1>
         <div className="hero-container-strap-paragraph">
           <p>I’m a software developer who loves making things and solving interesting problems.</p>
         </div>
