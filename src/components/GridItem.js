@@ -10,7 +10,7 @@ const GridItem = ({ project, index, className }) => {
     <li key={index} className={className} style={{ listStyleType: 'none' }}>
       <Link style={{ textDecoration: 'none', color: 'inherit' }} to={`${path}`}>
         <div className='icon'>
-          <img src={src} width='120px' alt='raspberry' />
+          <img src={src} width='120px' alt={title} />
         </div>
         <h2>{title}</h2>
         <p>{description}</p>
