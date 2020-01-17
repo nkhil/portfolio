@@ -19,6 +19,12 @@ const StyledGridItem = styled(GridItem)`
     box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
   }
 
+  a {
+    &:focus {
+      outline: none !important;
+    }
+  }
+
   .icon {
     display: flex;
     align-items: center;
