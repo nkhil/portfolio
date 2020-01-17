@@ -2,6 +2,8 @@ import raspberry from '../../static/images/raspberry.png';
 import stts from '../../static/images/stts.png';
 import fixtureMaker from '../../static/images/fixture.png';
 import school from '../../static/images/school.png';
+import train from '../../static/images/train.png';
+import brexit from '../../static/images/brexit.png';
 
 export const featuredProjects = [
   {
@@ -32,12 +34,12 @@ export const featuredProjects = [
     title: 'Bombay train map',
     description: 'I designed a London-inspired map for the train lines in Bombay.',
     path: '/',
-    src: raspberry,
+    src: train,
   },
   {
     title: 'Brexit means Breadsticks',
     description: 'A Chrome extension that turns every mention of Brexit into Breadsticks.',
     path: '/',
-    src: raspberry,
+    src: brexit,
   },
 ];

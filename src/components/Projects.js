@@ -79,7 +79,7 @@ const StyledProjects = styled(Projects)`
       padding-bottom: 5px;
 
       &:hover {
-        border-bottom: 1px solid ${colours.primaryBlue};
+        border-bottom: 3px solid ${colours.primaryBlue};
       }
     }
   }
