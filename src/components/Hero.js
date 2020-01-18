@@ -57,6 +57,8 @@ const StyledHero = styled(Hero)`
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 100vh;
+
     .hero-container {
       flex-direction: column;
       max-width: 100%;
