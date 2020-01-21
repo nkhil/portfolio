@@ -7,7 +7,7 @@ import logo from '../../static/images/logo.png';
 function Logo({ className, width }) {
   return (
     <div className={className}>
-      <Link to='/'>
+      <Link to="/">
         <img src={logo} alt="Nikhil" width={width} />
       </Link>
     </div>
@@ -16,6 +16,7 @@ function Logo({ className, width }) {
 
 const StyledLogo = styled(Logo)`
   margin-right: auto;
+  padding-left: 50px;
 
   img {
     max-width: 100%;
