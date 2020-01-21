@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
@@ -21,6 +20,13 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/content/projects`,
+      },
+    },
+    {
+      resolve: 'gatsby-remark-embed-gist',
+      options: {
+        username: 'nkhil',
+        includeDefaultCss: true,
       },
     },
   ],
