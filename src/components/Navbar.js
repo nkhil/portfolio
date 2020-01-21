@@ -8,15 +8,6 @@ import Logo from './Logo';
 import Colours from '../constants/colours';
 import width from '../constants/width';
 
-const StyledArrow = styled(MdKeyboardArrowRight)`
-  display: none;
-
-  @media screen and (max-width: 599px) {
-    display: inline;
-    justify-items: flex-end;
-  }
-`;
-
 function Navbar({ className }) {
   return (
     <div className={className}>
@@ -25,10 +16,7 @@ function Navbar({ className }) {
         <ul>
           {NavItems.map((item, i) => (
             <li key={i}>
-              <Link to={item.path}>
-                {item.name}
-                <StyledArrow />
-              </Link>
+              <Link to={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>
@@ -44,6 +32,7 @@ const StyledNavbar = styled(Navbar)`
   flex-direction: column;
   background-color: #fff;
   margin: auto;
+  margin-top: 15px;
 
   .navbar {
     min-width: ${width.navbarWidth};

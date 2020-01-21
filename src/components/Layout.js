@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import StyledBurgerIcon from './styled_components/StyledBurgerIcon';
 import Flex from './styled_components/Flex';
 
-export default function Layout({ children, navlinkColor, navbarWidth }) {
+export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleIsOpen = () => setIsOpen(!isOpen);
 
@@ -14,7 +14,7 @@ export default function Layout({ children, navlinkColor, navbarWidth }) {
       <GlobalStyles />
       <Flex justifyEnd>
         <StyledBurgerIcon handleIsOpen={handleIsOpen} isOpen={isOpen} />
-        <Navbar width={navbarWidth} isOpen={isOpen} navlinkColor={navlinkColor} />
+        <Navbar isOpen={isOpen} />
       </Flex>
       {children}
     </>
