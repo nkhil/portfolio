@@ -15,7 +15,7 @@ export const featuredProjects = [
   {
     title: 'HTTP Status code checker',
     description: 'Offline reference tool for quickly referencing HTTP status codes. ',
-    path: '/project-two-comes-here',
+    path: '/http-status-code-checker',
     src: stts,
   },
   {
