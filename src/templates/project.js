@@ -15,7 +15,7 @@ export default function ProjectTemplate({
   return (
     <>
       <Helmet>
-        <title>{post.frontmatter.title}</title>
+        <title>{`Nikhil Vijayan - ${post.frontmatter.title}`}</title>
       </Helmet>
       <Layout />
       <div className="blog-post-container">
