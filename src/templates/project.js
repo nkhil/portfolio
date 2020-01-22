@@ -3,7 +3,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import Navbar from '../components/Navbar';
+import Layout from '../components/Layout';
 import PostContainer from '../components/PostContainer';
 
 export default function ProjectTemplate({
@@ -17,7 +17,7 @@ export default function ProjectTemplate({
       <Helmet>
         <title>{post.frontmatter.title}</title>
       </Helmet>
-      <Navbar />
+      <Layout />
       <div className="blog-post-container">
         <PostContainer>
           <h1>{post.frontmatter.title}</h1>

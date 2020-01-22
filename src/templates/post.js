@@ -4,6 +4,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
+
 import PostContainer from '../components/PostContainer';
 
 export default function Template({
@@ -16,7 +17,7 @@ export default function Template({
       <Helmet>
         <title>{`Nikhil Vijayan - ${post.frontmatter.title}`}</title>
       </Helmet>
-      <Layout navbarWidth="750px" navlinkColor="#000" />
+      <Layout />
       <PostContainer>
         <h1>{post.frontmatter.title}</h1>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />

@@ -11,7 +11,6 @@ import Container from '../components/styled_components/Container';
 
 export default function Work({ data }) {
   const { edges } = data.projects;
-  console.log('TCL: Work -> edges', edges);
 
   return (
     <>
@@ -20,7 +19,7 @@ export default function Work({ data }) {
         <title>My Projects</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <Layout navbarWidth="750px" navlinkColor="#000"></Layout>
+      <Layout />
       <Container full backgroundColor="#fff" fullVertical>
         <GridContainer>
           {edges.map((project, index) => (

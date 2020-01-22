@@ -71,7 +71,7 @@ const StyledNavbar = styled(Navbar)`
   }
 
   @media screen and (max-width: 599px) {
-    transition: all 2s ease-out;
+    transition: all 0.2s ease-out;
 
     ${props => {
       if (props.isOpen) {

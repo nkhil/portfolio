@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import colours from '../constants/colours';
 
 const BlogContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
@@ -31,6 +32,20 @@ const BlogContainer = styled.div`
     color: #282828;
   }
 
+  a {
+    text-decoration: none;
+    color: ${colours.primaryBlue};
+    padding-bottom: 2px;
+
+    &:hover {
+      border-bottom: 1px solid ${colours.primaryBlue};
+    }
+
+    &:visited {
+      color:  ${colours.primaryBlue};
+    }
+  }
+
   code {
     background: #f4f4f4;
     border: 1px solid #ddd;
@@ -59,6 +74,7 @@ const BlogContainer = styled.div`
     p {
       font-size: 1.5rem;
       margin-bottom: 50px;
+      word-wrap: break-word;
     }
   }
 `;
