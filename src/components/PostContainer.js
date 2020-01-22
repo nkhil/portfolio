@@ -42,7 +42,7 @@ const BlogContainer = styled.div`
     }
 
     &:visited {
-      color:  ${colours.primaryBlue};
+      color: ${colours.primaryBlue};
     }
   }
 
@@ -68,7 +68,7 @@ const BlogContainer = styled.div`
     margin-top: 0px;
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
 
     p {
