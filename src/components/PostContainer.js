@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import colours from '../constants/colours';
 
 const BlogContainer = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
-  font-family: 'Open Sans', sans-serif;
   margin: auto;
   max-width: 650px;
   display: flex;
@@ -14,6 +12,7 @@ const BlogContainer = styled.div`
 
   h1 {
     font-size: 3.5rem;
+    margin-bottom: 0px;
   }
 
   h2 {
@@ -25,10 +24,9 @@ const BlogContainer = styled.div`
   }
 
   p {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    font-weight: inherit;
+    line-height: 1.9;
+    font-size: 1.4rem;
+    font-weight: 300;
     color: #282828;
   }
 

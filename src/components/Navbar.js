@@ -26,8 +26,6 @@ function Navbar({ className }) {
 }
 
 const StyledNavbar = styled(Navbar)`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -51,8 +49,7 @@ const StyledNavbar = styled(Navbar)`
   }
 
   li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.4rem;
 
     a {
       &:hover {
@@ -97,7 +94,7 @@ const StyledNavbar = styled(Navbar)`
     }
 
     li {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       width: 100vw;
       display: flex;
       justify-content: center;

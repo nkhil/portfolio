@@ -10,9 +10,6 @@ tags:
   - 'javascript'
   - 'hoisting'
 ---
-
-This is some text that's related to the project that gives some context.
-
 ![test img](./test.png)
 
 Our whole universe was in a hot dense state, then nearly fourteen billion years ago expansion started. Wait... The Earth began to cool, the autotrophs began to drool. Neanderthals developed tools, we built a wall (we built the pyramids). Math, science, history, unraveling the mysteries, that all started with the big bang!

@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Colours from '../constants/colours';
 import GridContainer from '../components/styled_components/GridContainer';
-import GridItem from '../components/styled_components/GridItem';
+import GridItem from '../components/GridItem';
 import Container from '../components/styled_components/Container';
 import { projects } from '../constants/projects';
 import PostContainer from '../components/PostContainer';

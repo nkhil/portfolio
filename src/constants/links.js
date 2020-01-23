@@ -4,7 +4,7 @@ export default [
     name: 'Home',
   },
   {
-    path: '/work',
+    path: '/projects',
     name: 'Projects',
   },
   {

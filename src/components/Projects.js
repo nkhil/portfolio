@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import GridItem from './styled_components/GridItem';
+import GridItem from './GridItem';
 import GridContainer from './styled_components/GridContainer';
 import colours from '../constants/colours';
 import width from '../constants/width';
@@ -22,7 +22,7 @@ function Projects({ data, className }) {
           ))}
         </GridContainer>
         <div className="section-link">
-          <Link to="/work">See all projects</Link>
+          <Link to="/projects">See all projects</Link>
         </div>
       </div>
     </div>
@@ -39,24 +39,23 @@ const StyledProjects = styled(Projects)`
   }
 
   .section-header {
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap');
+    /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat=swap'); */
 
     text-align: center;
     h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 3rem;
+      font-size: 3.6rem;
       margin-bottom: 10px;
       margin-top: 0;
       padding: 50px 0 0 0;
-      color: #2e2e2e;
+      color: ${colours.headlineGrey};
     }
 
     p {
-      font-family: 'Montserrat', sans-serif;
       font-size: 1.5rem;
       margin-top: 5px;
       margin-bottom: 30px;
       color: #2e2e2e;
+      font-weight: 220;
     }
 
     @media screen and (max-width: 599px) {
@@ -70,16 +69,17 @@ const StyledProjects = styled(Projects)`
   .section-link {
     text-align: center;
     font-size: 2rem;
+    font-weight: 200px;
     margin: 50px 0;
 
     a {
-      font-family: 'Montserrat', sans-serif;
       text-decoration: none;
       color: ${colours.primaryBlue};
       padding-bottom: 5px;
+      font-weight: 300;
 
       &:hover {
-        border-bottom: 3px solid ${colours.primaryBlue};
+        color: ${colours.headlineGrey}
       }
     }
   }

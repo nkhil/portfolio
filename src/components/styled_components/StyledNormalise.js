@@ -5,9 +5,8 @@ const GlobalStyle = createGlobalStyle`
   
   ${styledNormalize}
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
+  @import url('https://rsms.me/inter/inter.css');
+  html { font-family: 'Inter', sans-serif; }
 
   html, body {
 	height: 100%;

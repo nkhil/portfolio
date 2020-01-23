@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Container from './styled_components/Container';
 import MainContainer from './styled_components/MainContainer';
 import GridContainer from './styled_components/GridContainer';
-import GridItem from './styled_components/GridItem';
+import GridItem from './GridItem';
 
 const H2 = styled.h2`
   font-family: 'Open Sans', sans-serif;
