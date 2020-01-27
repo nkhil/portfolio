@@ -27,7 +27,7 @@ export const featuredProjects = [
   {
     title: 'Responsive website for a school',
     description: "I designed and built a responsive site for a friend's school using Gatsby JS",
-    path: '/',
+    path: '/responsive-school-website',
     src: school,
   },
   {

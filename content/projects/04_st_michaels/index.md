@@ -1,7 +1,7 @@
 ---
-path: '/mumbai-train-map'
+path: '/responsive-school-website'
 date: '13/02/2019'
-title: 'Mumbai train map'
+title: 'I made a Responsive, SEO-friendly static site for a friend\'s school'
 something: 'something2'
 posttype: 'project'
 category: 'javascript'
@@ -11,4 +11,6 @@ tags:
   - 'hoisting'
 ---
 
-This is some text that's related to the project that gives some context.
+![status code checker](./st-michaels-school.png)
+
+Coming soon.
