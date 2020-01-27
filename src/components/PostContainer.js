@@ -30,6 +30,13 @@ const BlogContainer = styled.div`
     color: #282828;
   }
 
+  ol {
+    line-height: 1.9;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #282828;
+  }
+
   a {
     text-decoration: none;
     color: ${colours.primaryBlue};
