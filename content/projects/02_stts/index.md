@@ -15,6 +15,8 @@ tags:
 
 I built a tool that lets me look up definitions for HTTP status codes offline and straight from within my terminal. This is also the first npm module I've made that needs to work from within the terminal.
 
+I want to give full credit to [https://httpstatuses.com/](https://httpstatuses.com/) for a thoroughly useful resource made available without ads. 
+
 ## Download the npm package
 
 You can download it as an npm module here: [https://www.npmjs.com/package/stts](https://www.npmjs.com/package/stts)
@@ -49,5 +51,46 @@ and map the script to a command in the _package.json_
 
 Publishing an npm package is easy and you'll find [loads](https://dev.to/therealdanvega/creating-your-first-npm-package-2ehf) [of](https://medium.com/the-andela-way/build-and-publish-your-first-npm-package-a4daf0e2431) [resources](https://medium.com/@bretcameron/how-to-publish-your-first-npm-package-b224296fc57b) for that out there.
 
+## Web scraping 101
 
+I am by no means an expert at web scraping, someone at work (thanks Josh!) suggested [Cheerio](https://github.com/cheeriojs/cheerio) as the package of choice. I'm looping over an array of status codes
+
+For eg: 
+
+```
+[200, 201, 202, 301, 302, 400].forEach(statusCode => {
+  // Do stuff with each status code.
+})
+```
+### Here are my logical steps:
+
+1. Concatenate each status code with 'https://httpstatuses.com/', for eg: 'https://httpstatuses.com/200', 
+2. Make a GET request to get all the HTML from that page back
+3. Get the first block with class name 'code', then get the first h1 as well as the first p tag within that block, store it in an object. 
+
+**_Note_**: [Here's](https://github.com/nkhil/stts/blob/master/src/dataFetcher/index.js) the web scraping code.
+
+This is the shape of the object: 
+
+```
+{
+  "100": {
+    "headline": "100 Continue",
+    "summary": "The initial part of a request has been received and has not yet been rejected by the server. The server intends to send a final response after the request has been fully received and acted upon."
+  },
+  "101": {
+    "headline": "101 Switching Protocols",
+    "summary": "The server understands and is willing to comply with the client's request, via the Upgrade header field1, for a change in the application protocol being used on this connection."
+  },
+  "102": {
+    "headline": "102 Processing",
+    "summary": "An interim response used to inform the client that the server has accepted the complete request, but has not yet completed it."
+  },
+  ...
+}
+  ```
+
+And that's it, once I have my data, I don't need to scrap again (thankfully HTTP status codes don't change every other week) and I can use it as a quick reference resource.
+
+P.S. If you have any questions, feel free to tweet me [@nkhil](https://twitter.com/nkhil).
 
