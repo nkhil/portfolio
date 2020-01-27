@@ -1,7 +1,7 @@
 ---
 path: '/responsive-school-website'
 date: '13/02/2019'
-title: 'I made a Responsive, SEO-friendly static site for a friend\'s school'
+title: 'I made a Responsive, SEO-friendly static site for a school'
 something: 'something2'
 posttype: 'project'
 category: 'javascript'
