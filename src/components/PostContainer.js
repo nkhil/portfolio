@@ -37,6 +37,11 @@ const BlogContainer = styled.div`
     color: #282828;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   a {
     text-decoration: none;
     color: ${colours.primaryBlue};

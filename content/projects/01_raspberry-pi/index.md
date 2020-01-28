@@ -10,13 +10,26 @@ tags:
   - 'javascript'
   - 'hoisting'
 ---
-![test img](./test.png)
+![test img](./1.jpg)
 
 Our whole universe was in a hot dense state, then nearly fourteen billion years ago expansion started. Wait... The Earth began to cool, the autotrophs began to drool. Neanderthals developed tools, we built a wall (we built the pyramids). Math, science, history, unraveling the mysteries, that all started with the big bang!
 
+## Here's a GIF of it in action
+
+[![giphy.gif](https://i.postimg.cc/rsYT17hX/giphy.gif)](https://postimg.cc/0KmhxXRc)
+
 You take the good, you take the bad, you take them both and there you have the facts of life, the facts of life. There's a time you got to go and show you're growin' now you know about the facts of life, the facts of life. When the world never seems to be livin up to your dreams and suddenly you're finding out the facts of life are all about you.
 
+## Prototype
+
+![test img](./2.jpg)
+
 Have you tried Wheaties? They're whole wheat with all of the bran. Won't you try Wheaties? For wheat is the best food of man. They're crispy and crunchy the whole year through, The kiddies never tire of them and neither will you. So just try Wheaties, the best breakfast food in the land!
+
+![test img](./3.jpg)
+![test img](./4.jpg)
+![test img](./5.jpg)
+![test img](./6.jpg)
 
 My name is Rhoda Morgenstern. I was born in the Bronx, New York in December of 1941. I've always felt responsible for World War II. The first thing I remember liking that liked me back was food. I had a bad puberty; it lasted seventeen years. I'm a high school graduate. I went to art school. My entrance exam was on a book of matches. I decided to move out of the house when I was twenty-four. My mother still refers to this as the time I ran away from home. Eventually, I ran to Minneapolis, where it's cold and I figured I'd keep better. Now I'm back in Manhattan. New York, this is your last chance!
 

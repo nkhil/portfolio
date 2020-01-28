@@ -1,7 +1,7 @@
 ---
-path: '/project-two-comes-here'
+path: '/fixture-maker'
 date: '13/02/2019'
-title: 'Brexit means breadsticks'
+title: 'Fixture maker'
 something: 'something2'
 posttype: 'project'
 category: 'javascript'
@@ -10,5 +10,6 @@ tags:
   - 'javascript'
   - 'hoisting'
 ---
+![fixture-maker](./fixture-maker.png)
 
-This is some text that's related to the project that gives some context.
+Fixture maker is a [coming soon...]

@@ -21,7 +21,7 @@ export const featuredProjects = [
   {
     title: 'WIP: Fixture Maker',
     description: 'npm module to programatically create fixture files in .json or .js format.',
-    path: '/',
+    path: '/fixture-maker',
     src: fixtureMaker,
   },
   {
