@@ -38,8 +38,17 @@ const BlogContainer = styled.div`
   }
 
   img {
-    width: 100%;
     height: auto;
+    width: 100%;
+  }
+
+  .gatsby-resp-image-image {
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .gatsby-resp-image-background-image {
+    padding-bottom: 0 !important;
   }
 
   a {
