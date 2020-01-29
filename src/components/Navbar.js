@@ -49,7 +49,7 @@ const StyledNavbar = styled(Navbar)`
   }
 
   li {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     a {
       &:hover {
