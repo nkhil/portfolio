@@ -39,18 +39,19 @@ const StyledHero = styled(Hero)`
       margin-left: 25px;
 
       .hero-container-strap-paragraph {
-        width: 450px;
+        width: 480px;
         p {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           line-height: 1.5;
           color: ${Colours.bodyGrey};
           margin: 5px 0;
           font-weight: 220;
+          padding-left: 5px;
         }
       }
 
       h1 {
-        font-size: 4rem;
+        font-size: 3.2rem;
         color: ${Colours.headlineGrey};
         margin: 0px;
         font-weight: 600;
