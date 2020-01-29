@@ -43,7 +43,7 @@ Once I'd published the module, getting it to work from within the terminal was s
 
 and map the script to a command in the _package.json_
 
-```
+```javascript
 "bin": {
   "stts": "./src/index.js"
 }
@@ -57,7 +57,7 @@ I am by no means an expert at web scraping, someone at work (thanks Josh!) sugge
 
 For eg: 
 
-```
+```javascript
 [200, 201, 202, 301, 302, 400].forEach(statusCode => {
   // Do stuff with each status code.
 })
@@ -72,7 +72,7 @@ For eg:
 
 This is the shape of the object: 
 
-```
+```json
 {
   "100": {
     "headline": "100 Continue",
