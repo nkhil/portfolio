@@ -12,14 +12,17 @@ tags:
 ---
 ![fixture-maker](./fixture-maker.png)
 
-Fixture maker is an npm package that helps you create any amount of sample data in any shape you need. 
+Fixture maker is an [npm package](https://www.npmjs.com/package/fixture-maker) that helps you create any amount of sample data in any shape you need. 
 
 The idea is that you can define the shape of an object that you need multiple copies of, with random data instead of flat, duplicate entries. 
 
-For eg: 
+## Quick usage example
 
 ```
-{
+const FixtureMaker = require('fixture-maker');
+const fixtureMaker = new FixtureMaker();
+
+const fixtureBody = {
   firstName: fixtureMaker.randomFirstName(),
   lastName: fixtureMaker.randomLastName(),
   age: fixtureMaker.randomNumber(),
@@ -31,7 +34,15 @@ For eg:
     country: fixtureMaker.isoCountry(),
   }
 }
+
+fixtureMaker.make({
+  body: fixtureBody,
+  numberOfCopies: 100,
+  filename: "helloworld"
+});
 ```
-fixture maker will, in theory, be able to create 1000 copies of that shape with random data. 
+fixture maker create a file called helloworld.json with 100 copies of the schema body you've specified. 
+
+
 
 

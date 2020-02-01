@@ -33,13 +33,13 @@ export const featuredProjects = [
   {
     title: 'Bombay train map',
     description: 'I designed a London-inspired map for the train lines in Bombay.',
-    path: '/',
+    path: '/bombay-train-map-design',
     src: train,
   },
   {
     title: 'Brexit means Breadsticks',
     description: 'A Chrome extension that turns every mention of Brexit into Breadsticks.',
-    path: '/',
+    path: '/brexit-means-breadsticks-chrome-extension',
     src: brexit,
   },
 ];
@@ -60,25 +60,25 @@ export const projects = [
   {
     title: 'WIP: Fixture Maker',
     description: 'npm module to programatically create fixture files in .json or .js format.',
-    path: '/',
+    path: '/fixture-maker',
     src: fixtureMaker,
   },
   {
     title: 'Responsive website for a school',
     description: "I designed and built a responsive site for a friend's school using Gatsby JS",
-    path: '/',
+    path: '/responsive-school-website',
     src: school,
   },
   {
     title: 'Bombay train map',
     description: 'I designed a London-inspired map for the train lines in Bombay.',
-    path: '/',
+    path: '/bombay-train-map-design',
     src: train,
   },
   {
     title: 'Brexit means Breadsticks',
     description: 'A Chrome extension that turns every mention of Brexit into Breadsticks.',
-    path: '/',
+    path: '/brexit-means-breadsticks-chrome-extension',
     src: brexit,
   },
-]
+];
