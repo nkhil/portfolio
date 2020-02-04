@@ -45,7 +45,7 @@ const StyledHero = styled(Hero)`
           line-height: 1.5;
           color: ${Colours.bodyGrey};
           margin: 5px 0;
-          font-weight: 220;
+          font-weight: 280;
           padding-left: 5px;
         }
       }
