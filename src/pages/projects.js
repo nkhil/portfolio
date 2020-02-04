@@ -9,10 +9,10 @@ import GridContainer from '../components/styled_components/GridContainer';
 import GridItem from '../components/GridItem';
 import Container from '../components/styled_components/Container';
 import { projects } from '../constants/projects';
-import PostContainer from '../components/PostContainer';
+import StyledHeader from '../components/SectionHeader';
+import Projects from '../components/Projects';
 
 export default function Work({ data }) {
-
   return (
     <>
       <Helmet>
@@ -22,8 +22,10 @@ export default function Work({ data }) {
       </Helmet>
       <Layout />
       <Container full backgroundColor="#fff" fullVertical>
-        <h1>Projects</h1>
-        <p>Here are a few things I've made.</p>
+        <StyledHeader>
+          <h2>Projects</h2>
+          <p>Here are some things I've made recently</p>
+        </StyledHeader>
         <GridContainer>
           {projects.map((project, index) => (
             <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />

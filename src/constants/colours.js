@@ -5,4 +5,5 @@ export default {
   headlineGrey: '#434343',
   bodyGrey: '#686868',
   linkColour: '#3640f5',
+  blogGrey: '#F9F9F9',
 };

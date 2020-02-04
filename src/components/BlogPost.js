@@ -1,49 +1,56 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Container from './styled_components/Container';
-import MainContainer from './styled_components/MainContainer';
-import GridContainer from './styled_components/GridContainer';
-import GridItem from './GridItem';
+import BlogContainer from './BlogContainer';
+import BlogItem from './BlogItem';
+import SectionHeader from './SectionHeader';
+import colours from '../constants/colours';
+import width from '../constants/width';
 
-const H2 = styled.h2`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  color: #2e2e2e;
-  margin: 0;
-  padding: 50px 10px 0px;
-`;
-
-const P = styled.p`
-  && {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #2e2e2e;
-  }
-`;
-
-function BlogPost({ data }) {
+function BlogPost({ data, className }) {
   return (
-    <>
-      <div>
-        <MainContainer bgColor="#eee">
-          <Container full backgroundColor="#eee" fullVertical>
-            <H2>Writing</H2>
-            <P>
-              I learn best by teaching. It also helps me document my learning. Here are a few articles I've written.
-            </P>
-            <GridContainer>
-              {data.map((project, index) => (
-                <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
-              ))}
-            </GridContainer>
-          </Container>
-        </MainContainer>
+    <div className={className}>
+      <div className="section-container">
+        <SectionHeader>
+          <h2>Writing</h2>
+          <p>Here are a few things I've written</p>
+        </SectionHeader>
+        <BlogContainer>
+          {data.map((blogPost, index) => (
+            <BlogItem blogPost={blogPost} index={index} />
+          ))}
+        </BlogContainer>
       </div>
-    </>
+    </div>
   );
 }
 
-export default BlogPost;
+const StyledBlogPost = styled(BlogPost)`
+  background-color: ${colours.blogGrey};
+
+  .section-container {
+    max-width: ${width.containerWidth};
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .section-link {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200px;
+    margin: 50px 0;
+
+    a {
+      text-decoration: none;
+      color: ${colours.primaryBlue};
+      padding-bottom: 5px;
+      font-weight: 300;
+
+      &:hover {
+        color: ${colours.headlineGrey};
+      }
+    }
+  }
+`;
+
+export default StyledBlogPost;

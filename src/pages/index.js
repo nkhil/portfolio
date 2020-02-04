@@ -5,9 +5,11 @@ import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
-import Work from '../components/Projects';
-import BlogPost from '../components/styled_components/BlogPost';
+import Projects from '../components/Projects';
+import BlogPost from '../components/BlogPost';
 import Colours from '../constants/colours';
+import { featuredProjects } from '../constants/projects';
+import { featuredBlogs } from '../constants/blog-posts';
 
 export default ({ data }) => (
   <>
@@ -17,10 +19,10 @@ export default ({ data }) => (
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 
-    <Layout navbarWidth="750px">
+    <Layout>
       <Hero />
-      <Work data={data.project.edges} />
-      <BlogPost data={data.blog.edges} />
+      <Projects data={featuredProjects} />
+      <BlogPost data={featuredBlogs} />
     </Layout>
   </>
 );
