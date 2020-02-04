@@ -12,7 +12,9 @@ tags:
 ---
 ![test img](./1.jpg)
 
-I built a thing that displays the current weather (it updates every 10 minutes). It's a raspberry pi connected to an e-ink display, and a python script that runs every 10 minutes, which also updates the screen.  [here](www.google.com)
+I built a thing that displays the current weather (it updates every 10 minutes). It's a raspberry pi connected to an e-ink display, and a python script that runs every 10 minutes, which also updates the screen. 
+
+You can find the script [here](https://gist.github.com/nkhil/0870b47ee2823a43aa5d6aee3ff17aad)
 
 ## Here's a GIF of it in action
 
