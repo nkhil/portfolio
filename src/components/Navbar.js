@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import NavItems from '../constants/links';
-import Logo from './Logo';
+import Logo from './CssLogo';
 import Colours from '../constants/colours';
 import width from '../constants/width';
 
@@ -12,7 +12,7 @@ function Navbar({ className }) {
   return (
     <div className={className}>
       <div className="navbar">
-        <Logo width="50px" />
+        <Logo />
         <ul>
           {NavItems.map((item, i) => (
             <li key={i}>
