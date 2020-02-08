@@ -36,6 +36,7 @@ const StyledFooter = styled(Footer)`
   background-color: black;
   min-height: 20vh;
   margin-bottom: 0;
+  margin-top: 100px;
 
   .footer-container {
     display: flex;
