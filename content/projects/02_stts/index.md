@@ -1,7 +1,7 @@
 ---
 path: '/http-status-code-checker'
 date: '13/02/2019'
-title: 'Offline HTTP status code reference in the CLI'
+title: 'Offline HTTP status code reference in the command line'
 something: 'something2'
 posttype: 'project'
 category: 'javascript'
@@ -13,7 +13,7 @@ tags:
 
 ![status code checker](./stts.png)
 
-I built a tool that lets me look up definitions for HTTP status codes offline and straight from within my terminal. This is also the first npm module I've made that needs to work from within the terminal.
+I built a tool that lets me look up definitions for HTTP status codes offline and straight from within the command line. This is also the first npm module I've made that needs to work from within the terminal.
 
 I want to give full credit to [https://httpstatuses.com/](https://httpstatuses.com/) for a thoroughly useful resource made available without ads. 
 
