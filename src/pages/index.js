@@ -7,8 +7,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import BlogPost from '../components/BlogPost';
-import Footer from '../components/Footer';
-import Colours from '../constants/colours';
+import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
 

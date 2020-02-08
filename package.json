@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "a11y-react-emoji": "^1.1.2",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-netlify-cms": "^4.1.11",
