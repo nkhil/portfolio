@@ -10,6 +10,7 @@ import BlogPost from '../components/BlogPost';
 import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
+import NotFound from '../components/NotFound';
 
 export default ({ data }) => (
   <>

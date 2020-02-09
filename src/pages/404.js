@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
+import NotFoundComponent from '../components/NotFound';
 
 const NotFound = () => (
   <>
@@ -9,8 +10,8 @@ const NotFound = () => (
       <title>OH NO - 404</title>
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
-    <Layout navlinkColor="#000">
-      <h1>Not Found</h1>
+    <Layout>
+      <NotFoundComponent />
     </Layout>
   </>
 );
