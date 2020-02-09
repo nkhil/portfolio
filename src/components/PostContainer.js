@@ -53,15 +53,15 @@ const BlogContainer = styled.div`
 
   a {
     text-decoration: none;
-    color: ${colours.primaryBlue};
+    color: blue;
     padding-bottom: 2px;
 
     &:hover {
-      border-bottom: 1px solid ${colours.primaryBlue};
+      border-bottom: 1px solid blue;
     }
 
     &:visited {
-      color: ${colours.primaryBlue};
+      color: blue;
     }
   }
 
