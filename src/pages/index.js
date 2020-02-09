@@ -24,6 +24,7 @@ export default ({ data }) => (
       <Hero />
       <Projects data={featuredProjects} />
       <BlogPost data={featuredBlogs} />
+      <NotFound />
       <Footer />
     </Layout>
   </>

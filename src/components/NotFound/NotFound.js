@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
 import { AiFillThunderbolt } from 'react-icons/ai';
@@ -30,6 +31,7 @@ const StyledNotFound = styled(NotFound)`
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
 
   .not-found-box {
     display: flex;
@@ -70,6 +72,20 @@ const StyledNotFound = styled(NotFound)`
         font-size: 8rem;
         font-weight: 700;
         margin: 5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+
+    .not-found-box {
+      max-width: 100%;
+
+      .not-found-box-heading {
+        align-items: baseline;
+        h1 {
+          font-size: 6rem;
+        }
       }
     }
   }
