@@ -10,6 +10,7 @@ import BlogPost from '../components/BlogPost';
 import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
+import NotFound from '../components/NotFound';
 
 export default ({ data }) => (
   <>
@@ -23,6 +24,7 @@ export default ({ data }) => (
       <Hero />
       <Projects data={featuredProjects} />
       <BlogPost data={featuredBlogs} />
+      <NotFound />
       <Footer />
     </Layout>
   </>

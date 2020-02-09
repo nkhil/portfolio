@@ -81,6 +81,10 @@ const StyledNotFound = styled(NotFound)`
     .not-found-box {
       max-width: 100%;
 
+      p {
+        font-size: 1.5rem;
+      }
+
       .not-found-box-heading {
         align-items: baseline;
         h1 {

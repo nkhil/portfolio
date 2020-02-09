@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import NotFoundComponent from '../components/NotFound';
+import Footer from '../components/Footer';
 
 const NotFound = () => (
   <>
@@ -12,6 +13,7 @@ const NotFound = () => (
     </Helmet>
     <Layout>
       <NotFoundComponent />
+      <Footer />
     </Layout>
   </>
 );
