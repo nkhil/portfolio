@@ -83,6 +83,7 @@ const StyledNotFound = styled(NotFound)`
 
       p {
         font-size: 1.5rem;
+        padding: 10px;
       }
 
       .not-found-box-heading {
