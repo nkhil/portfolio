@@ -1,7 +1,7 @@
 ---
-path: '/another-project'
+path: '/pineapple-journaling-app'
 date: '13/02/2019'
-title: 'Another project'
+title: 'I made a journaling app'
 something: 'something2'
 posttype: 'project'
 category: 'javascript'

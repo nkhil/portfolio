@@ -4,6 +4,7 @@ import fixtureMaker from '../../static/images/fixture.png';
 import school from '../../static/images/school.png';
 import train from '../../static/images/train.png';
 import brexit from '../../static/images/brexit.png';
+import pineapple from '../../static/images/pineapple-icon.png';
 
 export const featuredProjects = [
   {
@@ -13,16 +14,16 @@ export const featuredProjects = [
     src: raspberry,
   },
   {
+    title: 'Pineapple Journal',
+    description: 'Daily journalling app (this a work in progress)',
+    path: '/pineapple-journaling-app',
+    src: pineapple,
+  },
+  {
     title: 'HTTP Status code checker',
     description: 'Offline reference tool for quickly referencing HTTP status codes. ',
     path: '/http-status-code-checker',
     src: stts,
-  },
-  {
-    title: 'WIP: Fixture Maker',
-    description: 'npm module to programatically create fixture files in .json or .js format.',
-    path: '/fixture-maker',
-    src: fixtureMaker,
   },
   {
     title: 'Responsive website for a school',
@@ -50,6 +51,12 @@ export const projects = [
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
+  },
+  {
+    title: 'Pineapple Journal',
+    description: 'Daily journalling app (this a work in progress)',
+    path: '/pineapple-journaling-app',
+    src: pineapple,
   },
   {
     title: 'HTTP Status code checker',
