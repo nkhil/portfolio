@@ -15,7 +15,7 @@ export const featuredProjects = [
   },
   {
     title: 'Pineapple Journal',
-    description: 'Daily journalling app (this a work in progress)',
+    description: 'Daily journalling web app built using React',
     path: '/pineapple-journaling-app',
     src: pineapple,
   },
@@ -54,7 +54,7 @@ export const projects = [
   },
   {
     title: 'Pineapple Journal',
-    description: 'Daily journalling app (this a work in progress)',
+    description: 'Daily journalling web app built using React',
     path: '/pineapple-journaling-app',
     src: pineapple,
   },

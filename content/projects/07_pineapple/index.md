@@ -11,4 +11,14 @@ tags:
   - 'hoisting'
 ---
 
+![pineapple web app](./1.png)
+
+This is some text that's related to the project that gives some context.
+
+![pineapple web app](./2.png)
+
+This is some text that's related to the project that gives some context.
+
+![pineapple web app](./3.png)
+
 This is some text that's related to the project that gives some context.
