@@ -22,7 +22,7 @@ export const featuredBlogs = [
   {
     title: 'How to make a word replacement Chrome extension',
     description: '',
-    path: '/make-word-replacement-chrome-extension',
+    path: '/word-replacement-chrome-extension',
   },
   {
     title: 'How to use the JavaScript fetch API to get UK bank holidays',
@@ -55,7 +55,7 @@ export const allPosts = [
   {
     title: 'How to make a word replacement Chrome extension',
     description: '',
-    path: '/make-word-replacement-chrome-extension',
+    path: '/word-replacement-chrome-extension',
   },
   {
     title: 'How to use the JavaScript fetch API to get UK bank holidays',
