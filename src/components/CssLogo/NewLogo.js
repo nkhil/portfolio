@@ -28,7 +28,7 @@ const StyledLogo = styled(Logo)`
   p {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
     line-height: 0.8;
