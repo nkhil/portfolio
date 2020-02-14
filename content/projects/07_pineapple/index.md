@@ -13,7 +13,7 @@ tags:
 
 ![pineapple web app](./1.png)
 
-NOTE: This is still a work in progress.
+NOTE: This is currently a work in progress.
 
 You can visit the web app [here](https://master.d2sl5soukqzc24.amplifyapp.com/).
 
