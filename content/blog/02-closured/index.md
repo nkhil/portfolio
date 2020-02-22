@@ -1,7 +1,7 @@
 ---
 path: "/examples-javascript-closures"
 date: "13/02/2019"
-title: "Understanding the module pattern in JavaScript"
+title: "Examples of closures in JavaScript"
 something: "something2"
 posttype: "blog"
 category: "javascript"
