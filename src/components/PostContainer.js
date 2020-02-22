@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import colours from '../constants/colours';
 
 const BlogContainer = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
   margin: auto;
   max-width: 650px;
   display: flex;
@@ -13,14 +15,17 @@ const BlogContainer = styled.div`
   h1 {
     font-size: 3.5rem;
     margin-bottom: 0px;
+    line-height: 1.2;
   }
 
   h2 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
 
   p {
@@ -28,6 +33,30 @@ const BlogContainer = styled.div`
     font-size: 1.4rem;
     font-weight: 300;
     color: #282828;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+  }
+
+  blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  pre {
+    border-radius: 10px;
+    padding: 20px;
+
+    code {
+      font-family: 'Source Code Pro', monospace !important;
+      font-size: 1.2rem;
+    }
   }
 
   ol {
@@ -63,23 +92,6 @@ const BlogContainer = styled.div`
     &:visited {
       color: blue;
     }
-  }
-
-  code {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
   }
 
   @media screen and (max-width: 599px) {
