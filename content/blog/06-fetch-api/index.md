@@ -1,28 +1,30 @@
 ---
-path: '/javascript-fetch-api-uk-bank-holidays'
-date: '14/02/2019'
-title: 'How to use the JavaScript fetch API to get UK bank holidays (step by step)'
-something: 'something2'
-posttype: 'blog'
-category: 'javascript'
-description: 'This is a second test'
+path: "/javascript-fetch-api-uk-bank-holidays"
+date: "14/02/2019"
+title: "How to use the JavaScript fetch API to get UK bank holidays (step by step)"
+something: "something2"
+posttype: "blog"
+category: "javascript"
+description: "This is a second test"
 tags:
-  - 'javascript'
-  - 'hoisting'
+  - "javascript"
+  - "hoisting"
 ---
 
 In this article, I’m going to cover a simple example of how to get data from an API using the fetch() method , and then manipulate it.
 
-I found this UK Bank Holidays JSON API: https://www.gov.uk/bank-holidays.json 
+I found this UK Bank Holidays JSON API: https://www.gov.uk/bank-holidays.json
 
 Now, we’d like to fetch() some data from it. let’s get started.
 
 ## Step 1:
 
-```
+```javascript
 // Declare a variable, to avoid using the full URL
-const endpoint = 'https://www.gov.uk/bank-holidays.json';
-fetch(endpoint)
+const endpoint = "https://www.gov.uk/bank-holidays.json";
+
+fetch(endpoint);
+
 // Yep, it's that easy.
 ```
 
@@ -32,9 +34,10 @@ fetch(endpoint)
 
 We can use the .then() method to do something with that response. Let’s console.log it to see what was returned.
 
-```
-const endpoint = 'https://www.gov.uk/bank-holidays.json';
-fetch(endpoint).then((response)=>console.log(response));
+```javascript
+const endpoint = "https://www.gov.uk/bank-holidays.json";
+
+fetch(endpoint).then(response => console.log(response));
 ```
 
 Here’s what is logged in the console:
@@ -49,11 +52,12 @@ Promises are interesting, and kind of out of the scope for this article. You can
 
 Now, we’re going to use the .json() method to our response, and chain another .then() to console log what gets returned.
 
-```
-const endpoint = 'https://www.gov.uk/bank-holidays.json';
+```javascript
+const endpoint = "https://www.gov.uk/bank-holidays.json";
+
 fetch(endpoint)
-     .then((response) => response.json())
-     .then((data) => console.log(data));
+  .then(response => response.json())
+  .then(data => console.log(data));
 ```
 
 The result:
@@ -70,30 +74,34 @@ It always helps me to console.log() things to check if I’ve got the right data
 
 So here’s what our code looks like all together:
 
-```
-const endpoint = 'https://www.gov.uk/bank-holidays.json';
+```javascript
+const endpoint = "https://www.gov.uk/bank-holidays.json";
+
 fetch(endpoint)
-     .then((response) => response.json())
-     .then((data) => console.log(data));
+  .then(response => response.json())
+  .then(data => console.log(data));
 ```
 
 But we don’t just want this in our console, we want to manipulate it and make it do stuff, remember? So instead of logging it in our console, let’s pass it a function called handleData with data as the attribute.
 
 ## Step 4:
 
-```
+```javascript
 const endpoint = 'https://www.gov.uk/bank-holidays.json';
+
 fetch(endpoint)
      .then((response) => response.json())
      .then((data) => handleData(data);
+
 ```
 
 ## Step 5:
 
 We would now like to write a function that takes the title and the date from the england-and-wales object, and display a list of all the holidays we have.
 
-```
-function handleData(data){
+```javascript
+
+function handleData(data) {
  let bankHolidays = data; //For ease
  let england = bankHolidays["england-and-wales"].events;
 // Now, we're ready to map over each object inside of 'england'
@@ -102,15 +110,16 @@ function handleData(data){
 // Let's assign it to a variable so we can pass it onto the HTML
 const html = england.map((items) =>{
 return `
-              <li>${items.title} <br/> <span class='yellow'>(${date} / ${month} / ${year})</span>  </li>
-              `;
-              }
-            
-            }).join('');
- });
- ```
+     <li>${items.title} <br/> <span class='yellow'>(${date} / ${month} / ${year})</span>  </li>
+     `;
+     }
 
- In case things broke down for you here. All we’re doing is mapping over the events array, and [using backticks (or template literals)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) provided by ES6 to pas in items inside the events array into a neat format we can use in our HTML. Also, since .map() returns another array, we’re using a .join('') at the end there to return a string.
+     }).join('');
+ });
+
+```
+
+In case things broke down for you here. All we’re doing is mapping over the events array, and [using backticks (or template literals)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) provided by ES6 to pas in items inside the events array into a neat format we can use in our HTML. Also, since .map() returns another array, we’re using a .join('') at the end there to return a string.
 
 _If you’re getting confused here, just read up on the .map() method — it’s not hard, I promise._
 
@@ -120,20 +129,19 @@ Now that we have our html variable that contains everything we need to inject in
 
 Our HTML can be something simple like
 
-```
-<ul id='holidays'>
-</ul>
+```html
+<ul id="holidays"></ul>
 ```
 
 and we just need to select this at the beginning of our JS script with
 
-```
-const ul = document.getElementById('holidays');
+```javascript
+const ul = document.getElementById("holidays");
 ```
 
 and now, inside our function, we can just do this
 
-```
+```javascript
 ul.innerHTML = html;
 ```
 

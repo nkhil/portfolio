@@ -21,7 +21,7 @@ If you’re still reading this, here is how I went about this. This was trickier
 
 This is what I tried at first:
 
-```
+```javascript
 const words = [...document.body.getElementsByTagName('*')];
 
 const strip = words.forEach(element => {
@@ -33,7 +33,7 @@ Note to self: .replace() does not modify the existing variable, so you need to r
 
 I also tried
 
-```
+```javascript
 document.body.innerHTML = document.body.innerHTML.replace(/Brexit/gi, 'Breadsticks');
 ```
 
@@ -49,7 +49,7 @@ I got some help from a senior developer at work. I wasn’t way off. What I need
 
 **Here’s the working code. Seeing it work without breaking brought a tear to my eye.**
 
-```
+```javascript
 var elementsInsideBody = [...document.body.getElementsByTagName('*')];
 // This makes an array of everything inside the body tag
 
