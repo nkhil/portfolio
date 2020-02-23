@@ -45,7 +45,8 @@ const StyledGridItem = styled(GridItem)`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5780F9;
+    background-color: #fff;
+    border: 5px solid black;
     height: 120px;
     width: 120px;
     -moz-border-radius: 50%;
@@ -59,19 +60,20 @@ const StyledGridItem = styled(GridItem)`
   }
 
   h2 {
+    font-family: 'Poppins';
     padding: 10px 20px 5px 20px;
     font-size: 1.8rem;
     line-height: 1.2;
-    text-align: left;
+    text-align: center;
     margin: 20px 0 0px 0;
-    color: ${colours.headlineGrey};
+    color: black;
     font-weight: 550;
   }
 
   p {
     padding: 0px 20px;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
     margin: 0px 0px 20px 0px;
     color: ${colours.headlineGrey};

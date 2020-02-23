@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import colours from '../constants/colours';
 
 function SectionHeader({ className, children }) {
   return <div className={className}>{children}</div>;
@@ -11,11 +10,12 @@ const StyledSectionHeader = styled(SectionHeader)`
   text-align: center;
 
   h2 {
+    font-family: 'Poppins';
     font-size: 3.6rem;
     margin-bottom: 10px;
     margin-top: 0;
     padding: 50px 0 0 0;
-    color: ${colours.headlineGrey};
+    color: black;
   }
 
   p {
