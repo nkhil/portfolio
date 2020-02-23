@@ -26,7 +26,7 @@ function BlogPost({ data, className }) {
 }
 
 const StyledBlogPost = styled(BlogPost)`
-  background-color: ${colours.blogGrey};
+  background-color: ${colours.heroWhite};
 
   .section-container {
     max-width: ${width.containerWidth};

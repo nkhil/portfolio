@@ -7,7 +7,6 @@ import GridContainer from './styled_components/GridContainer';
 import SectionHeader from './SectionHeader';
 import colours from '../constants/colours';
 import width from '../constants/width';
-import { featuredProjects } from '../constants/projects';
 
 function Projects({ data, className }) {
   return (
@@ -31,7 +30,7 @@ function Projects({ data, className }) {
 }
 
 const StyledProjects = styled(Projects)`
-  background-color: ${colours.heroLightGrey};
+  background-color: ${colours.heroWhite};
 
   .section-container {
     max-width: ${width.containerWidth};
