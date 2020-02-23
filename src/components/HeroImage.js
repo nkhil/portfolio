@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import image from '../../static/images/image.png';
-import colours from '../constants/colours';
 
 function HeroImage({ className }) {
   return (
