@@ -14,15 +14,14 @@ const StyledSectionHeader = styled(SectionHeader)`
     font-size: 3.6rem;
     margin-bottom: 10px;
     margin-top: 0;
-    padding: 50px 0 0 0;
     color: black;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 5px;
     margin-bottom: 30px;
-    color: #2e2e2e;
+    color: black;
     font-weight: 220;
   }
 

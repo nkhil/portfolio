@@ -19,8 +19,8 @@ const StyledHeroImage = styled(HeroImage)`
 
   img {
     width: 180px;
-    border-radius: 50%;
-    border: 10px solid black;
+    border-radius: 58% 42% 58% 42% / 45% 54% 46% 55%;
+    border: 10px solid #e8eafe;
   }
 `;
 

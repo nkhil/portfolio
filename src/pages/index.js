@@ -15,7 +15,7 @@ export default ({ data }) => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Nikhil Vijayan - Hi, I'm Nikhil.</title>
+      <title>Hey, I'm Nikhil.</title>
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 

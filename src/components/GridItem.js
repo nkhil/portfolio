@@ -28,7 +28,7 @@ const StyledGridItem = styled(GridItem)`
   margin: 1rem 0;
   position: relative;
   border-radius: 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #f8f8f8;
   padding-top: 20px;
   -webkit-tap-highlight-color: transparent;
   &:hover {
@@ -45,13 +45,12 @@ const StyledGridItem = styled(GridItem)`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    border: 5px solid black;
+    background-color: #e8eafe;
     height: 120px;
     width: 120px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    -moz-border-radius: 42% 58% 37% 63% / 55% 40% 60% 45%;
+    -webkit-border-radius: 42% 58% 37% 63% / 55% 40% 60% 45%;
+    border-radius: 42% 58% 37% 63% / 55% 40% 60% 45%;
     align-self: center;
     text-align: center;
     line-height: 100px;
