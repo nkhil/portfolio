@@ -6,27 +6,29 @@ import BlogItem from './BlogItem';
 import SectionHeader from './SectionHeader';
 import colours from '../constants/colours';
 import width from '../constants/width';
+import GridContainer from './styled_components/GridContainer';
+import GridItem from './GridItem';
 
 function BlogPost({ data, className }) {
   return (
     <div className={className}>
       <div className="section-container">
-        <SectionHeader>
+        <SectionHeader marginTop="0px">
           <h2>Writing</h2>
           <p>Here are a few things I've written</p>
         </SectionHeader>
-        <BlogContainer>
+        <GridContainer>
           {data.map((blogPost, index) => (
-            <BlogItem blogPost={blogPost} index={index} />
+            <GridItem project={blogPost} index={index} />
           ))}
-        </BlogContainer>
+        </GridContainer>
       </div>
     </div>
   );
 }
 
 const StyledBlogPost = styled(BlogPost)`
-  background-color: ${colours.blogGrey};
+  background-color: ${colours.heroWhite};
 
   .section-container {
     max-width: ${width.containerWidth};

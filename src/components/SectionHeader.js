@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import colours from '../constants/colours';
 
 function SectionHeader({ className, children }) {
   return <div className={className}>{children}</div>;
@@ -9,20 +8,21 @@ function SectionHeader({ className, children }) {
 
 const StyledSectionHeader = styled(SectionHeader)`
   text-align: center;
+  margin-top: ${props => (props.marginTop ? props.marginTop : '100px')};
 
   h2 {
+    font-family: 'Poppins';
     font-size: 3.6rem;
     margin-bottom: 10px;
     margin-top: 0;
-    padding: 50px 0 0 0;
-    color: ${colours.headlineGrey};
+    color: black;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 5px;
     margin-bottom: 30px;
-    color: #2e2e2e;
+    color: black;
     font-weight: 220;
   }
 

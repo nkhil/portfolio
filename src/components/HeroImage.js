@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import image from '../../static/images/image.png';
-import colours from '../constants/colours';
+import image from '../../static/images/nikhil.png';
 
 function HeroImage({ className }) {
   return (
@@ -19,8 +18,8 @@ const StyledHeroImage = styled(HeroImage)`
 
   img {
     width: 180px;
-    border-radius: 50%;
-    border: 7px solid ${colours.primaryBlue};
+    border-radius: 58% 42% 58% 42% / 45% 54% 46% 55%;
+    border: 10px solid #e8eafe;
   }
 `;
 

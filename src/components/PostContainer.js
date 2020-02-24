@@ -13,6 +13,7 @@ const BlogContainer = styled.div`
   margin-top: 100px;
 
   h1 {
+    font-family: 'Poppins';
     font-size: 3.5rem;
     margin-bottom: 0px;
     line-height: 1.2;

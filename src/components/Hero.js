@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImage from './HeroImage';
-import Colours from '../constants/colours';
+import colours from '../constants/colours';
 import width from '../constants/width';
 
 const Hero = ({ className }) => (
@@ -13,7 +13,7 @@ const Hero = ({ className }) => (
       <div className="hero-container-strap">
         <h1>Hey, I'm Nikhil</h1>
         <div className="hero-container-strap-paragraph">
-          <p>I’m a software developer who loves making things and solving interesting problems.</p>
+          <p>I’m a software developer who loves making things.</p>
         </div>
       </div>
     </div>
@@ -23,8 +23,8 @@ const Hero = ({ className }) => (
 const StyledHero = styled(Hero)`
   display: flex;
   flex-direction: column;
-  min-height: 500px;
-  background-color: ${Colours.heroWhite};
+  min-height: 400px;
+  background-color: ${colours.heroWhite};
 
   .hero-container {
     display: flex;
@@ -41,20 +41,20 @@ const StyledHero = styled(Hero)`
       .hero-container-strap-paragraph {
         width: 480px;
         p {
-          font-size: 1.5rem;
+          font-size: 2rem;
           line-height: 1.5;
-          color: ${Colours.bodyGrey};
+          color: black;
           margin: 5px 0;
-          font-weight: 280;
+          font-weight: 320;
           padding-left: 5px;
         }
       }
 
       h1 {
-        font-size: 3.2rem;
-        color: ${Colours.headlineGrey};
+        font-family: 'Poppins';
+        font-size: 4rem;
+        color: black;
         margin: 0px;
-        font-weight: 600;
       }
     }
   }

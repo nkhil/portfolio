@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/display-name */
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
@@ -15,7 +15,7 @@ export default ({ data }) => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Nikhil Vijayan - Hi, I'm Nikhil.</title>
+      <title>Hey, I'm Nikhil.</title>
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
 
