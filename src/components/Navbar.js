@@ -54,7 +54,7 @@ const StyledNavbar = styled(Navbar)`
     a {
       &:hover {
         cursor: pointer;
-        color: ${Colours.primaryBlue};
+        color: rgb(44, 75, 255);
       }
     }
 

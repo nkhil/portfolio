@@ -8,6 +8,7 @@ function SectionHeader({ className, children }) {
 
 const StyledSectionHeader = styled(SectionHeader)`
   text-align: center;
+  margin-top: ${props => (props.marginTop ? props.marginTop : '100px')};
 
   h2 {
     font-family: 'Poppins';

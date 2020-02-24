@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import image from '../../static/images/image.png';
+import image from '../../static/images/nikhil.png';
 
 function HeroImage({ className }) {
   return (

@@ -42,7 +42,7 @@ const StyledGridItem = styled(GridItem)`
   }
 
   .icon {
-    display: flex;
+    display: ${props => (props.project.src ? 'flex' : 'none')};
     align-items: center;
     justify-content: center;
     background-color: #e8eafe;
@@ -71,12 +71,12 @@ const StyledGridItem = styled(GridItem)`
 
   p {
     padding: 0px 20px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
     line-height: 1.5;
     margin: 0px 0px 20px 0px;
-    color: ${colours.headlineGrey};
-    font-weight: 300;
+    color: black;
+    font-weight: 350;
   }
 
   ul {

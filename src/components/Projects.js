@@ -12,7 +12,7 @@ function Projects({ data, className }) {
   return (
     <div className={className}>
       <div className="section-container">
-        <SectionHeader>
+        <SectionHeader marginTop="0px">
           <h2>Projects</h2>
           <p>Here are some things I've made recently</p>
         </SectionHeader>
@@ -40,18 +40,20 @@ const StyledProjects = styled(Projects)`
 
   .section-link {
     text-align: center;
-    font-size: 2rem;
     font-weight: 200px;
     margin: 50px 0;
 
     a {
       text-decoration: none;
-      color: ${colours.primaryBlue};
-      padding-bottom: 5px;
+      padding: 20px 30px;
+      background-color: rgb(44, 75, 255);
+      color: white;
+      border-radius: 5px;
+      font-size: 1.5rem;
       font-weight: 300;
 
       &:hover {
-        color: ${colours.headlineGrey};
+        background-color: rgb(2, 28, 184);
       }
     }
   }

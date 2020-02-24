@@ -1,17 +1,17 @@
 export const featuredBlogs = [
   {
     title: 'Understanding hoisting in JavaScript',
-    description: '',
+    description: 'How variables get hoisted, and the difference between using const, let and var.',
     path: '/understanding-hoisting',
   },
   {
     title: 'Examples of closures in JavaScript',
-    description: '',
+    description: 'A few examples of closures, and how they offer re-usability.',
     path: '/examples-javascript-closures',
   },
   {
     title: 'How I came to love small objects and methods in Ruby',
-    description: '',
+    description: 'How I started writing more readable, testable functions',
     path: '/love-ruby',
   },
   {

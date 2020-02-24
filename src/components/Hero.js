@@ -23,7 +23,7 @@ const Hero = ({ className }) => (
 const StyledHero = styled(Hero)`
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: 400px;
   background-color: ${colours.heroWhite};
 
   .hero-container {
