@@ -41,7 +41,7 @@ const StyledHero = styled(Hero)`
       .hero-container-strap-paragraph {
         width: 480px;
         p {
-          font-size: 2rem;
+          font-size: 1.5rem;
           line-height: 1.5;
           color: black;
           margin: 5px 0;
@@ -52,7 +52,7 @@ const StyledHero = styled(Hero)`
 
       h1 {
         font-family: 'Poppins';
-        font-size: 4rem;
+        font-size: 3rem;
         color: black;
         margin: 0px;
       }

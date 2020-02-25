@@ -61,7 +61,7 @@ const StyledGridItem = styled(GridItem)`
   h2 {
     font-family: 'Poppins';
     padding: 10px 20px 5px 20px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
     margin: 20px 0 5px 0;
