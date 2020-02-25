@@ -44,13 +44,14 @@ const StyledProjects = styled(Projects)`
     margin: 50px 0;
 
     a {
+      font-family: 'Poppins';
       text-decoration: none;
       padding: 20px 30px;
       background-color: rgb(44, 75, 255);
       color: white;
       border-radius: 5px;
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 400;
 
       &:hover {
         background-color: rgb(2, 28, 184);

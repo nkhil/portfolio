@@ -62,9 +62,9 @@ const StyledGridItem = styled(GridItem)`
     font-family: 'Poppins';
     padding: 10px 20px 5px 20px;
     font-size: 1.8rem;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: center;
-    margin: 20px 0 0px 0;
+    margin: 20px 0 5px 0;
     color: black;
     font-weight: 550;
   }

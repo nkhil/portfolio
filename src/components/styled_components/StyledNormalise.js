@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
   @import url('https://rsms.me/inter/inter.css');
-  @import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
   html { font-family: 'Inter', sans-serif; }
 
   html, body {

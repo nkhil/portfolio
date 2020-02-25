@@ -23,7 +23,7 @@ function Footer({ className }) {
           Made with <Emoji symbol="♥️" label="love" /> using Gatsby.
         </p>
         <p>
-          <a href="https://github.com/nkhil/portfolio">Github repo</a>
+          If you spot any typos or corrections, please feel free to make a <a href="https://github.com/nkhil/portfolio">pull request</a>
         </p>
       </div>
     </div>
@@ -53,10 +53,11 @@ const StyledFooter = styled(Footer)`
 
       a {
         color: white;
+        border-bottom: 1px solid white;
         text-decoration: none;
 
         &:hover {
-          border-bottom: 1px solid white;
+          border-bottom: none;
         }
       }
     }
