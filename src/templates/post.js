@@ -16,7 +16,7 @@ export default function Template({
   return (
     <>
       <Helmet>
-        <title>{`Nikhil Vijayan - ${post.frontmatter.title}`}</title>
+        <title>{`${post.frontmatter.title}`}</title>
       </Helmet>
       <Layout>
         <PostContainer>

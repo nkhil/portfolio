@@ -16,7 +16,7 @@ export default function Work({ data }) {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>My Projects</title>
+        <title>Nikhil Vijayan - Projects</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Layout>
