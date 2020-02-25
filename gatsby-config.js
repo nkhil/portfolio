@@ -1,12 +1,10 @@
-import ga from './src/constants/google-analytics';
-
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: ga.trackingCode,
+        trackingId: process.env.GA_TRACKING_CODE,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Setting this parameter is optional
