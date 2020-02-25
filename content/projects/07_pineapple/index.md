@@ -15,7 +15,7 @@ tags:
 
 NOTE: This is currently a work in progress.
 
-You can visit the web app [here](https://master.d2sl5soukqzc24.amplifyapp.com/).
+You can visit the web app at [pineapplejournal.com](https://pineapplejournal.com/).
 
 The code can be found [here](https://github.com/nkhil/pineapple02).
 
