@@ -56,8 +56,16 @@ const BlogContainer = styled.div`
 
     code {
       font-family: 'Source Code Pro', monospace !important;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
+  }
+
+  .language-text {
+    padding: 5px 7px !important;
+    background-color: #ebebeb;
+    color: black;
+    border-radius: 3px;
+    font-size: 1rem;
   }
 
   ol {

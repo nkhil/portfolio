@@ -46,10 +46,12 @@ Let's say we have this function that updates the database:
 
 Here, you might want to test:
 
-**The happy path**
+### The happy path
+
 The `createUser` function returns a `200 OK` response, and we get a valid `userId` returned.
 
-**The unhappy path**
+### he unhappy path
+
 The `createUser` function throws an error, and the `create` function can handle the error appropriately.
 
 ### Test setup using chai and mocha
@@ -90,7 +92,8 @@ The `createUser` function throws an error, and the `create` function can handle 
 
     it('can successfully create a user', () => {
       const modelStub = sandbox.stub(model)
-      modelStub.createUser.resolves(Promise.resolve({ userId: '1234' }));
+      modelStub.createUser
+        .resolves(Promise.resolve({ userId: '1234' }));
       const userDetails = {
         firstName: 'John',
         lastName: 'Doe',
