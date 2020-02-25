@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import StyledHeader from '../components/SectionHeader';
-import BlogContainer from '../components/BlogContainer';
+import GridContainer from '../components/styled_components/GridContainer';
+import GridItem from '../components/GridItem';
 import { allPosts } from '../constants/blog-posts';
-import BlogItem from '../components/BlogItem';
 import width from '../constants/width';
+import Footer from '../components/Footer/Footer';
 
 function BlogPage({ className }) {
   return (
@@ -17,18 +18,20 @@ function BlogPage({ className }) {
         <title>Nikhil Vijayan - Blog</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <Layout />
-      <div className="section-container">
-        <StyledHeader>
-          <h2>Blog</h2>
-          <p>Here are some things I've written</p>
-        </StyledHeader>
-        <BlogContainer>
-          {allPosts.map((blogPost, index) => (
-            <BlogItem blogPost={blogPost} index={index} />
-          ))}
-        </BlogContainer>
-      </div>
+      <Layout>
+        <div className="section-container">
+          <StyledHeader>
+            <h2>Blog</h2>
+            <p>Here are some things I've written</p>
+          </StyledHeader>
+          <GridContainer>
+            {allPosts.map((blogPost, index) => (
+              <GridItem project={blogPost} index={index} />
+            ))}
+          </GridContainer>
+        </div>
+        <Footer />
+      </Layout>
     </div>
   );
 }
