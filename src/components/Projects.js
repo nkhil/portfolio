@@ -40,7 +40,6 @@ const StyledProjects = styled(Projects)`
 
   .section-link {
     text-align: center;
-    font-weight: 200px;
     margin: 50px 0;
 
     a {
