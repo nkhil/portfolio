@@ -11,10 +11,6 @@ tags:
   - "hoisting"
 ---
 
-```
-UNFINISHED POST!
-```
-
 Sinon helps you create mocks, stubs and spies to help with unit testing. 
 
 Sinon sandbox makes stubbing much easier. 
@@ -146,4 +142,5 @@ Note that the expect statements are being returned:
         .to.eventually.be.rejectedWith('some error');
 ```
 
-This is because 
+If you don't return the `expect` statement, the test doesn't wait for the function to resolve. Annoyingly, the test will still pass so make sure you don't forget the return. 
+
