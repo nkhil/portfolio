@@ -21,7 +21,7 @@ You can find the script [here](https://gist.github.com/nkhil/0870b47ee2823a43aa5
 [![giphy-1.gif](https://i.postimg.cc/kXfxwYvY/giphy-1.gif)](https://postimg.cc/F7kdHZq0)
 
 
-The pi is connected to the [inkyphat](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-inky-phat) display via a 40x 20cm Male-Female Jumper Wire Cable ([found for less than £3](https://www.amazon.co.uk/Conductor-Female-Jumper-Color-Ribbon/dp/B00ATMHU52/ref=alp_dpwidget_a_w_?th=1&psc=1&smid=A258M9JSP6L6E7)). 
+The pi is connected to the [inkyphat](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-inky-phat) display via a 40x 20cm Male-Female Jumper Wire Cable ([see here](https://www.amazon.co.uk/Conductor-Female-Jumper-Color-Ribbon/dp/B00ATMHU52/ref=alp_dpwidget_a_w_?th=1&psc=1&smid=A258M9JSP6L6E7)). 
 
 I didn't know how to solder (at the time of writing this), so I ended up using the [GPIO Hammer Header](https://shop.pimoroni.com/products/gpio-hammer-header) to add female headers to the pi so I can plug the jumper wire cables into. Here's a [video](https://www.youtube.com/watch?v=ddLbUNlaZ3U) on how to use the hammer header. 
 
