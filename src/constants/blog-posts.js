@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'Unit testing using sinon sandbox',
+    description: 'Sinon sandbox makes stubbing much easier.',
+    path: '/unit-testing-sinon-sandbox',
+  },
+  {
     title: 'Understanding hoisting in JavaScript',
     description: 'How variables get hoisted, and the difference between using const, let and var.',
     path: '/understanding-hoisting',
@@ -33,8 +38,13 @@ export const featuredBlogs = [
 
 export const allPosts = [
   {
+    title: 'Unit testing using sinon sandbox',
+    description: 'Sinon sandbox makes stubbing much easier',
+    path: '/unit-testing-sinon-sandbox',
+  },
+  {
     title: 'Understanding hoisting in JavaScript',
-    description: 'How variables get hoisted, and the difference between using const, let and var.',
+    description: 'How variables get hoisted, and the difference between using const, let and var',
     path: '/understanding-hoisting',
   },
   {
