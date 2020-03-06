@@ -11,9 +11,9 @@ tags:
   - "hoisting"
 ---
 
-Sinon helps you create mocks, stubs and spies to help with unit testing. 
+Sinon helps you create mocks, stubs and spies to help with unit testing.
 
-Sinon sandbox makes stubbing much easier. 
+Sinon sandbox makes stubbing much easier.
 
 ## Here's the code we will test
 
@@ -22,22 +22,21 @@ Let's say we have this function that updates the database:
 ```javascript
 // user.js
 
-  const createUser = require('../models/createUser.js');
+const createUser = require("../models/createUser.js");
 
-  async function create(userDetails) {
-    try {
-      const { firstName, lastName, email } = userDetails;
-      const { userId } = await createUser({ 
-        body: { firstName, lastName, email },
-      });
-      return userId;
-    } catch {
-      throw new Error('An error occurred');
-    }
+async function create(userDetails) {
+  try {
+    const { firstName, lastName, email } = userDetails;
+    const { userId } = await createUser({
+      body: { firstName, lastName, email }
+    });
+    return userId;
+  } catch {
+    throw new Error("An error occurred");
   }
+}
 
-  module.exports = { create };
-
+module.exports = { create };
 ```
 
 Here, you might want to test:
@@ -80,67 +79,72 @@ The `createUser` function throws an error, and the `create` function can handle 
 ### Here's our first test for the happy path
 
 ```javascript
-  describe('#create', () => {
+describe("#create", () => {
+  afterEach(() => {
+    sandbox.restore();
+  });
 
-    afterEach(() => {
-      sandbox.restore();
+  it("can successfully create a user", () => {
+    const modelStub = sandbox.stub(model);
+    modelStub.createUser.resolves(Promise.resolve({ userId: "1234" }));
+    const userDetails = {
+      firstName: "John",
+      lastName: "Doe",
+      email: "john.doe@yahoo.com",
+      foo: "bar"
+    };
+    // There are a few ways you could test this:
+
+    // 1.
+    return expect(controller.create(userDetails)).to.eventually.equal("1234");
+
+    // 2.
+    sinon.assert.calledWith(modelStub.createUser, {
+      body: {
+        firstName: "John",
+        lastName: "Doe",
+        email: "john.doe@yahoo.com"
+      }
     });
 
-    it('can successfully create a user', () => {
-      const modelStub = sandbox.stub(model)
-      modelStub.createUser
-        .resolves(Promise.resolve({ userId: '1234' }));
-      const userDetails = {
-        firstName: 'John',
-        lastName: 'Doe',
-        email: 'john.doe@yahoo.com',
-        foo: 'bar',
-      };
-      // There are a few ways you could test this:
-      
-      // 1. 
-      return expect(controller.create(userDetails))
-        .to.eventually.equal('1234');
-
-      // 2. 
-      sinon.assert.calledWith(modelStub.createUser, { 
-        body: {
-          firstName: 'John',
-          lastName: 'Doe',
-          email: 'john.doe@yahoo.com',
-        } 
-      });
-
-      // 3. 
-      const promise = controller.create(userDetails);
-      return expect(promise).to.eventually.be.fulfilled;
-    });
-
-  })
+    // 3.
+    const promise = controller.create(userDetails);
+    return expect(promise).to.eventually.be.fulfilled;
+  });
+});
 ```
 
 ### Testing the unhappy path
 
 ```javascript
-    it('can handles errors correctly', () => {
-      const model = sandbox.stub(model);
-      model.createUser.throws(new Error('some error'));
-      const userDetails = {
-        firstName: 'John',
-        lastName: 'Doe',
-        email: 'john.doe@yahoo.com',
-      };
-      return expect(controller.create(userDetails))
-        .to.eventually.be.rejectedWith('some error');
-    });
+it("can handles errors correctly", () => {
+  const model = sandbox.stub(model);
+  model.createUser.throws(new Error("some error"));
+  const userDetails = {
+    firstName: "John",
+    lastName: "Doe",
+    email: "john.doe@yahoo.com"
+  };
+  return expect(controller.create(userDetails)).to.eventually.be.rejectedWith(
+    "some error"
+  );
+});
 ```
 
-Note that the expect statements are being returned: 
+Note that the expect statements are being returned:
 
 ```javascript
-  return expect(controller.create(userDetails))
-        .to.eventually.be.rejectedWith('some error');
+return expect(controller.create(userDetails)).to.eventually.be.rejectedWith(
+  "some error"
+);
 ```
 
-If you don't return the `expect` statement, the test doesn't wait for the function to resolve. Annoyingly, the test will still pass so make sure you don't forget the return. 
+If you don't return the `expect` statement, the test doesn't wait for the function to resolve. Annoyingly, the test will still pass so make sure you don't forget the return.
 
+Also, note that if you import your model into your controller file using destructuring, you won't be able to (as far as I know) use Sinon sandbox as I've done above.
+
+This is an example of what will NOT work:
+
+```javascript
+const { createUser } = require("./models/user");
+```
