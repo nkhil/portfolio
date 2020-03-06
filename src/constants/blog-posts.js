@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'How to Group an array of objects by key',
+    description: 'Group an array of objects into an object organised by a key of choice',
+    path: '/group-array-objects-in-javascript',
+  },
+  {
     title: 'Unit testing using sinon sandbox',
     description: 'Sinon sandbox makes stubbing much easier.',
     path: '/unit-testing-sinon-sandbox',
