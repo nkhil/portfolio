@@ -75,6 +75,12 @@ const BlogContainer = styled.div`
     color: #282828;
   }
 
+  ul {
+    li {
+      line-height: 1.7;
+    }
+  }
+
   img {
     height: auto;
     width: 100%;
