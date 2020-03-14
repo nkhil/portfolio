@@ -5,6 +5,11 @@ export const featuredBlogs = [
     path: '/group-array-objects-in-javascript',
   },
   {
+    title: 'Bash script to dynamically open web pages straight from the terminal',
+    description: 'Automate opening up pages with repetitive patterns',
+    path: '/bash-script-dynamically-open-pages',
+  },
+  {
     title: 'Unit testing using sinon sandbox',
     description: 'Sinon sandbox makes stubbing much easier.',
     path: '/unit-testing-sinon-sandbox',
@@ -42,6 +47,16 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'Bash script to dynamically open web pages straight from the terminal',
+    description: 'Automate opening up pages with repetitive patterns',
+    path: '/bash-script-dynamically-open-pages',
+  },
+  {
+    title: 'How to Group an array of objects by key',
+    description: 'Group an array of objects into an object organised by a key of choice',
+    path: '/group-array-objects-in-javascript',
+  },
   {
     title: 'Unit testing using sinon sandbox',
     description: 'Sinon sandbox makes stubbing much easier',
