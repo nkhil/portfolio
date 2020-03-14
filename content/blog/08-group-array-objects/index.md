@@ -128,3 +128,26 @@ groupByyear(albums);
 const groupByArtist = groupBy("artist");
 groupByArtist(albums);
 ```
+
+## Explanation
+
+Our `groupBy` function is a curried function that makes use of partial application to help keep this function re-usable. 
+
+The `groupBy` function takes a key (eg: 'year') as its only argument, and returns another function `group`, which in turn takes the array of objects that we'd like to sort. 
+
+Within the `group` function, we're reducing the array using an empty object as the accumulator (because that's the shape of the final result we're after).
+
+Inside the reduce, say our key is 'year', and it's our first iteration (which means out acc is an empty object without any key-value pairs). 
+
+```javascript
+const property = obj[key];
+// obj[key] here will be '1991'.
+
+acc[property] = acc[property] || [];
+// At this point acc['1991'] doesn't yet exist, so it will be an empty array. This step is important as it checks if acc['1991'] exists, and if not, creates it and assigns a value of an empty array.
+
+acc[property].push(obj);
+// Here, all we're doing is pushing our object into the right group
+```
+
+**Full disclosure**: I came across this solution on [JamieMason's](https://gist.github.com/JamieMason/0566f8412af9fe6a1d470aa1e089a752) Github gist.
