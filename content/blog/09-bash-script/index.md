@@ -15,7 +15,7 @@ Say you work at Microsoft, and you work on a number of repositories under [https
 
 For eg: 
 
-- vstest -[https://github.com/microsoft/vstest](https://github.com/microsoft/vstest)
+- vstest - [https://github.com/microsoft/vstest](https://github.com/microsoft/vstest)
 - vscode - [https://github.com/microsoft/vscode](https://github.com/microsoft/vscode)
 - vscode docs - [https://github.com/microsoft/vscode-docs](https://github.com/microsoft/vscode-docs)
 - vscode go - [https://github.com/microsoft/vscode-go](https://github.com/microsoft/vscode-go)
