@@ -8,7 +8,7 @@ category: "javascript"
 description: "This is a second test"
 ---
 
-One of the main principles of [functional programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0) is keeping your functions pure. This means given the same parameter, your function should return the same output. 
+One of the main principles of [functional programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0) is keeping your functions pure. This means given the same input(s), your function should return the same output. 
 
 Here's an example of a pure function:
 
@@ -63,8 +63,10 @@ If this seems a bit unrealistic, here's a more practical example how you could b
 
 // this function will introduce a hard to trace bug in your code
 function getLargestTransaction(transactions) {
-  const sortedTransactions = transactions.sort((a, b) => b.amount - a.amount);
-  return sortedTransactions.splice(0, 1);
+  const sortedTrx = transactions.sort((a, b) => {
+    return b.amount - a.amount
+  });
+  return sortedTrx.splice(0, 1);
 }
 
 function calculateTotalAmount(transactions) {
@@ -123,11 +125,5 @@ function getLargestTransaction(transactions) {
 }
 ```
 
-**Here's another example**
 
-A classic mistake is losing track of the fact that javascript objects are passed by reference, not by value. 
-
-```javascript
-
-```
 
