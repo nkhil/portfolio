@@ -49,12 +49,12 @@ For example, let's take out `getLastElement` function:
 ```javascript
   const array = [1, 2, 3];
 
-  getFirstElement(array); // 3
+  getFirstElement(array); // 1
 
   console.log(array); // [2, 3]
 ```
 
-If we were expecting `array` to be `[1, 2, 3]`, we'd be in for a shock to learn that we now only have 2 elements instead of three.
+If we were expecting `array` to be `[1, 2, 3]`, we'd be in for a shock to learn that we've lost the first element.
 
 If this seems a bit unrealistic, here's a more practical example how you could be introducing bugs in your code by mutating state.
 
@@ -124,6 +124,23 @@ function getLargestTransaction(transactions) {
   return sortedTrx.slice(0, 1);
 }
 ```
+Another way to think about your functions is to make sure your functions are **referentially transparent**
 
+### Referentially transparency 
+
+Referentially transparency essentially means your function (or an expression) can be replaced with its result. 
+
+For example: 
+
+```javascript
+function add(numOne, numTwo) {
+  return numOne + numTwo
+}
+
+const resultOne = add(2, 2) + 6; // 10
+const resultTwo = 4 + 6; // 10
+
+resultOne === resultTwo // true - referentially transparent!
+```
 
 
