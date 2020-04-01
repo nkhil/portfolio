@@ -13,7 +13,7 @@ tags:
 
 ![brexit means breadsticks](./brexit-means-breadsticks.png)
 
-I made a chrome extension that turns every mention of the word '_brexit_' into '_breadsticks_', inspired by Theresa May's vacuous double-speak. 
+I made a chrome extension that turns every mention of the word '_brexit_' into '_breadsticks_', inspired by Theresa May's brilliant example of political [doublespeak](https://en.wikipedia.org/wiki/Doublespeak).
 
 ## Download the extension
 ![brexit means breadsticks](./brexit-2.png)
