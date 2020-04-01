@@ -45,7 +45,7 @@ Here, you might want to test:
 
 The `createUser` function returns a `200 OK` response, and we get a valid `userId` returned.
 
-### he unhappy path
+### The unhappy path
 
 The `createUser` function throws an error, and the `create` function can handle the error appropriately.
 
