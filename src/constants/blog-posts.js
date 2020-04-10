@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'How mutating state can lead to bugs in software',
+    description: 'Some examples of how mutating state can introduce unexpected bugs',
+    path: '/functional-programming-mutating-state-bugs',
+  },
+  {
     title: 'How to Group an array of objects by key',
     description: 'Group an array of objects into an object organised by a key of choice',
     path: '/group-array-objects-in-javascript',
@@ -34,19 +39,14 @@ export const featuredBlogs = [
     description: 'Using Sinon to unit test better',
     path: '/using-sinon-js-calledwith',
   },
-  {
-    title: 'How to make a word replacement Chrome extension',
-    description: "How I made the 'brexit means breadsticks' chrome extension",
-    path: '/word-replacement-chrome-extension',
-  },
-  {
-    title: 'How to use the JavaScript fetch API to get UK bank holidays',
-    description: 'Make a self-updating UK bank holiday tracker',
-    path: '/javascript-fetch-api-uk-bank-holidays',
-  },
 ];
 
 export const allPosts = [
+  {
+    title: 'How mutating state can lead to bugs in software',
+    description: 'Some examples of how mutating state can introduce unexpected bugs',
+    path: '/functional-programming-mutating-state-bugs',
+  },
   {
     title: 'Bash script to dynamically open web pages straight from the terminal',
     description: 'Automate opening up pages with repetitive patterns',

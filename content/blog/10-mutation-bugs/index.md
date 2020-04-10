@@ -1,5 +1,5 @@
 ---
-path: "/data-mutability-bugs-javascript"
+path: "/functional-programming-mutating-state-bugs"
 date: "14/02/2019"
 title: "How mutating state can lead to bugs in software (with examples)"
 something: "something2"
@@ -143,4 +143,51 @@ const resultTwo = 4 + 6; // 10
 resultOne === resultTwo // true - referentially transparent!
 ```
 
+### Quick note about Objects in JS
 
+Objects in JS are [passed by reference, not by value](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293), which makes it especially prone to bugs caused by state mutation.
+
+Here's an example from a bug I'd introduced by mutating the state of objects. 
+
+```javascript
+
+async function createPerson(requestBody) {
+  delete requestBody.address; // Mutates the request body object!
+  await model.createPerson(requestBody); 
+}
+
+async function createAddress(requestBody) {
+  const { address } = requestBody; 
+  // address is undefined due to the mutation in the createPerson function!
+  await model.createAddress()
+}
+
+function orchestrator(requestBody) {
+  await createPerson(requestBody);
+  await createAddress(requestBody);
+}
+```
+
+If this were to be pushed into a production environment, they would see that any address being created would always be `undefined`. All the logs would point to the `createAddress` database call being made, no errors being thrown etc. 
+
+The way the functions above are written can be improved on a lot, but the easiest way to fix the bug would be to follow the principle of not mutating state, like so:
+
+```javascript
+
+async function createPerson(requestBody) {
+  const body = { ...requestBody };
+  delete body.address; 
+  await model.createPerson(body); 
+}
+
+async function createAddress(requestBody) {
+  const body = { ...requestBody };
+  const { address } = body; 
+  await model.createAddress()
+}
+
+function orchestrator(requestBody) {
+  await createPerson(requestBody);
+  await createAddress(requestBody);
+}
+```
