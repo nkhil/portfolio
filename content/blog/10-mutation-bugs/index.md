@@ -44,7 +44,7 @@ function getFirstElement(array) {
 
 In the `getFirstElement` function above, we're returning the last element of the array. However, this modifies (mutates) the original array as well, and if we're not careful that can lead to unexpected bugs. 
 
-For example, let's take out `getLastElement` function:
+For example, let's take our `getLastElement` function:
 
 ```javascript
   const array = [1, 2, 3];
@@ -126,7 +126,7 @@ function getLargestTransaction(transactions) {
 ```
 Another way to think about your functions is to make sure your functions are **referentially transparent**
 
-### Referentially transparency 
+### Referential transparency 
 
 Referentially transparency essentially means your function (or an expression) can be replaced with its result. 
 
@@ -147,7 +147,7 @@ resultOne === resultTwo // true - referentially transparent!
 
 Objects in JS are [passed by reference, not by value](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293), which makes it especially prone to bugs caused by state mutation.
 
-Here's an example from a bug I'd introduced by mutating the state of objects. 
+Here's an example from a real bug I'd introduced by mutating the state. 
 
 ```javascript
 
@@ -168,7 +168,7 @@ function orchestrator(requestBody) {
 }
 ```
 
-If this were to be pushed into a production environment, they would see that any address being created would always be `undefined`. All the logs would point to the `createAddress` database call being made, no errors being thrown etc. 
+If this were to be pushed into a production environment, they would see that any address being created would always be `undefined`. All the logs would point to the `createAddress` database call being made correctly and no errors being thrown. 
 
 The way the functions above are written can be improved on a lot, but the easiest way to fix the bug would be to follow the principle of not mutating state, like so:
 
@@ -191,3 +191,4 @@ function orchestrator(requestBody) {
   await createAddress(requestBody);
 }
 ```
+I hope that has been useful. If you have any questions, you can reach me [@nkhil](https://twitter.com/nkhil). [Click here](https://tinyletter.com/nkhil) to get any new posts I write in your inbox.
