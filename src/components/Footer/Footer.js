@@ -1,10 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaTwitter, FaLinkedinIn, FaCodepen } from 'react-icons/fa';
-import { MdArrowBack } from 'react-icons/md';
+import { FaGithub, FaTwitter, FaLinkedinIn, FaCodepen, FaMedium, FaStackOverflow } from 'react-icons/fa';
 import Emoji from 'a11y-react-emoji';
-import Colours from '../../constants/colours';
 import width from '../../constants/width';
 import FooterIcon from './FooterIcon';
 import urls from '../../constants/footer-URLs';
@@ -16,14 +14,17 @@ function Footer({ className }) {
         <div className="icons">
           <FooterIcon icon={FaGithub} url={urls.github} />
           <FooterIcon icon={FaLinkedinIn} url={urls.linkedin} />
+          <FooterIcon icon={FaMedium} url={urls.medium} />
           <FooterIcon icon={FaCodepen} url={urls.codepen} />
           <FooterIcon icon={FaTwitter} url={urls.twitter} />
+          <FooterIcon icon={FaStackOverflow} url={urls.stackOverflow} />
         </div>
         <p>
           Made with <Emoji symbol="♥️" label="love" /> using Gatsby.
         </p>
         <p>
-          If you spot any typos or corrections, please feel free to make a <a href="https://github.com/nkhil/portfolio">pull request</a>
+          If you spot any typos or corrections, please feel free to make a{' '}
+          <a href="https://github.com/nkhil/portfolio">pull request</a>
         </p>
       </div>
     </div>
