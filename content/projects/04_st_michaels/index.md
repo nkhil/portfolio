@@ -11,10 +11,20 @@ tags:
   - 'hoisting'
 ---
 
-![status code checker](./st-michaels-school.png)
+![Nikhil Vijayan Gatsby static site](./st-michaels-school.png)
 
-I made this site for a friend's school that is based in Ahmednagar (India). The site's built using GatsbyJS and styled using styled-components.
+[Live website](https://vigilant-roentgen-6c50d2.netlify.com/)
 
-I'll add more details about this project soon.
+[Github project](https://github.com/nkhil/school-test)
 
-In the meantime you can have a look at the site here: [Netlify link](https://vigilant-roentgen-6c50d2.netlify.com/). It is not yet live as I'm waiting on some images, and I'd like to implement an easy to use CMS (Netlify CMS) before making it live. 
+This is a Gatsby static site I built for a friend's school in Ahmednagar (India).
+
+The site uses: 
+
+- Gatsby.js (and various Gatsby plugins)
+- Styled Components
+- CSS media queries for responsiveness
+- Netlify for continuous integration (CI) and continuous deployment (CD)
+- Netlify CMS to allow for easy content editing
+
+All the CSS used on this project is vanilla, as I'm not yet familiar with any CSS frameworks. 
