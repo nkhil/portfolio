@@ -40,18 +40,20 @@ const StyledBlogPost = styled(BlogPost)`
 
   .section-link {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 200px;
     margin: 50px 0;
 
     a {
+      font-family: 'Poppins';
       text-decoration: none;
-      color: ${colours.primaryBlue};
-      padding-bottom: 5px;
-      font-weight: 300;
+      padding: 20px 30px;
+      background-color: rgb(44, 75, 255);
+      color: white;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      font-weight: 400;
 
       &:hover {
-        color: ${colours.headlineGrey};
+        background-color: rgb(2, 28, 184);
       }
     }
   }
