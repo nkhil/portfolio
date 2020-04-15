@@ -118,30 +118,29 @@ describe("#create", () => {
 
 ```javascript
 it("can handles errors correctly", () => {
-  const model = sandbox.stub(model);
-  model.createUser.throws(new Error("some error"));
+  const modelStub = sandbox.stub(model);
+  modelStub.createUser.throws(new Error("some error"));
   const userDetails = {
     firstName: "John",
     lastName: "Doe",
     email: "john.doe@yahoo.com"
   };
-  return expect(controller.create(userDetails)).to.eventually.be.rejectedWith(
-    "some error"
-  );
+  return expect(controller.create(userDetails)).
+    to.eventually.be.rejectedWith("some error");
 });
 ```
 
 Note that the expect statements are being returned:
 
 ```javascript
-return expect(controller.create(userDetails)).to.eventually.be.rejectedWith(
-  "some error"
-);
+return expect(controller.create(userDetails)).
+  to.eventually.be.rejectedWith("some error");
 ```
+## Gotchas you should look out for
 
 If you don't return the `expect` statement, the test doesn't wait for the function to resolve. Annoyingly, the test will still pass so make sure you don't forget the return.
 
-Also, note that if you import your model into your controller file using destructuring, you won't be able to (as far as I know) use Sinon sandbox as I've done above.
+if you import your model into your controller file using destructuring, you won't be able to (as far as I know) use Sinon sandbox as I've done above.
 
 This is an example of what will NOT work:
 

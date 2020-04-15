@@ -147,7 +147,7 @@ resultOne === resultTwo // true - referentially transparent!
 
 Objects in JS are [passed by reference, not by value](https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293), which makes it especially prone to bugs caused by state mutation.
 
-Here's an example from a real bug I'd introduced by mutating the state. 
+Here's an example from a real bug I'd introduced by mutating state. 
 
 ```javascript
 
