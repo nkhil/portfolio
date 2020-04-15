@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import BlogContainer from './BlogContainer';
-import BlogItem from './BlogItem';
+import { Link } from 'gatsby';
 import SectionHeader from './SectionHeader';
 import colours from '../constants/colours';
 import width from '../constants/width';
@@ -22,6 +21,9 @@ function BlogPost({ data, className }) {
             <GridItem project={blogPost} index={index} />
           ))}
         </GridContainer>
+        <div className="section-link">
+          <Link to="/blog">See all blog posts</Link>
+        </div>
       </div>
     </div>
   );
