@@ -13,19 +13,29 @@ tags:
 
 ![status code checker](./stts.png)
 
-I built a tool that lets me look up definitions for HTTP status codes offline and straight from within the command line. This is also the first npm module I've made that needs to work from within the terminal.
+I built a tool that lets me look up definitions for HTTP status codes offline and straight from within the command line.
 
 I want to give full credit to [https://httpstatuses.com/](https://httpstatuses.com/) for a thoroughly useful resource made available without ads. 
 
-## Download the npm package
+## Setup
 
-You can download it as an npm module here: [https://www.npmjs.com/package/stts](https://www.npmjs.com/package/stts)
+Install the npm module globally
 
-## Making your first npm module
+```bash
+npm install -g stts
+```
 
-I love making little tools that make life easier - so I made this simple offline reference tool. I actually tend to use it more than I expected which is cool. Also, I got to do some rudimantary web scraping.
+You should now be able to use it by typing `stts` followed by any HTTP code you want a quick definition for. Example: 
 
-## The business logic is trivial
+```bash
+stts 301
+```
+
+## Making my first npm module
+
+I love making little tools that make life easier - so I made this simple offline reference tool. I actually tend to use it more than I expected which is surprisingly great. Also, I got to do some rudimentary web scraping.
+
+## The business logic is pretty straightforward
 
 First of all, here is a link to the Github project: [https://github.com/nkhil/stts](https://github.com/nkhil/stts).
 
@@ -37,13 +47,13 @@ For styling / formatting, I'm using a couple of external dependencies like chalk
 
 Once I'd published the module, getting it to work from within the terminal was slightly tricky, but thanks to [this article](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e) for making it trivial - you need to add a shebang character on top of the index.js file
 
-```
+```bash
 #!/usr/bin/env node
 ```
 
 and map the script to a command in the _package.json_
 
-```javascript
+```json
 "bin": {
   "stts": "./src/index.js"
 }
@@ -53,7 +63,9 @@ Publishing an npm package is easy and you'll find [loads](https://dev.to/thereal
 
 ## Web scraping 101
 
-I am by no means an expert at web scraping, someone at work (thanks Josh!) suggested [Cheerio](https://github.com/cheeriojs/cheerio) as the package of choice. I'm looping over an array of status codes
+I am by no means an expert at web scraping, someone at work (thanks Josh!) suggested [Cheerio](https://github.com/cheeriojs/cheerio) as the package of choice. 
+
+I start off with an array of all existing status codes, than loop over every single one of them to perform an operation.
 
 For eg: 
 
@@ -64,13 +76,13 @@ For eg:
 ```
 ### Here are my logical steps:
 
-1. Concatenate each status code with 'https://httpstatuses.com/', for eg: 'https://httpstatuses.com/200', 
+1. Concatenate each status code with 'https://httpstatuses.com/' (for eg: 'https://httpstatuses.com/200')
 2. Make a GET request to get all the HTML from that page back
-3. Get the first block with class name 'code', then get the first h1 as well as the first p tag within that block, store it in an object. 
+3. Find the right text using cheerio's selectors 
 
 **_Note_**: [Here's](https://github.com/nkhil/stts/blob/master/src/dataFetcher/index.js) the web scraping code.
 
-This is the shape of the object: 
+This is the shape of the result object: 
 
 ```json
 {
