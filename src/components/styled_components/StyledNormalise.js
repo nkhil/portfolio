@@ -272,6 +272,10 @@ template {
   display: none;
 }
 
+#gatsby-noscript {
+  display: none;
+}
+
 `;
 
 export default GlobalStyle;
