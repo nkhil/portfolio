@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/display-name */
 import React from 'react';
+import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
@@ -11,7 +12,7 @@ import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
 
-export default ({ data }) => (
+const Index = ({ data }) => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
@@ -27,6 +28,14 @@ export default ({ data }) => (
     </Layout>
   </>
 );
+
+const StyledIndex = styled(Index)`
+  #gatsby-noscript {
+    display: none;
+  }
+`;
+
+export default StyledIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
