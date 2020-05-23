@@ -12,7 +12,7 @@ import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
 
-const Index = ({ data }) => (
+export default ({ data }) => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
@@ -28,14 +28,6 @@ const Index = ({ data }) => (
     </Layout>
   </>
 );
-
-const StyledIndex = styled(Index)`
-  #gatsby-noscript {
-    display: none;
-  }
-`;
-
-export default StyledIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
