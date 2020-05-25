@@ -5,6 +5,7 @@ import school from '../../static/images/school.png';
 import train from '../../static/images/train.png';
 import brexit from '../../static/images/brexit.png';
 import pineapple from '../../static/images/pineapple-icon.png';
+import react from '../../static/images/react.png';
 
 export const featuredProjects = [
   {
@@ -12,6 +13,13 @@ export const featuredProjects = [
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
+  },
+  {
+    title: 'Managing state without redux',
+    description:
+      'Playing around with the react useContext and useReducer API to manage stateLaser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/react-state-management-using-usereducer-and-usecontext',
+    src: react,
   },
   {
     title: 'Pineapple Journal',
@@ -46,6 +54,13 @@ export const featuredProjects = [
 ];
 
 export const projects = [
+  {
+    title: 'Managing state without redux',
+    description:
+      'Playing around with the react useContext and useReducer API to manage stateLaser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/react-state-management-using-usereducer-and-usecontext',
+    src: react,
+  },
   {
     title: 'Raspberry pi weather display',
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
