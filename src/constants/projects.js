@@ -16,8 +16,7 @@ export const featuredProjects = [
   },
   {
     title: 'Managing state without redux',
-    description:
-      'Playing around with the react useContext and useReducer API to manage stateLaser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    description: 'Playing around with the react useContext and useReducer API to manage state',
     path: '/react-state-management-using-usereducer-and-usecontext',
     src: react,
   },
@@ -56,8 +55,7 @@ export const featuredProjects = [
 export const projects = [
   {
     title: 'Managing state without redux',
-    description:
-      'Playing around with the react useContext and useReducer API to manage stateLaser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    description: 'Playing around with the react useContext and useReducer API to manage state',
     path: '/react-state-management-using-usereducer-and-usecontext',
     src: react,
   },
