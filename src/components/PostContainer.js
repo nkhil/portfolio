@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-import colours from '../constants/colours';
 
 const BlogContainer = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
