@@ -15,7 +15,7 @@ tags:
 
 This was my first time playing around with managing state in React without [prop drilling](https://kentcdodds.com/blog/prop-drilling/).
 
-You can see the simple, responsive app here: [https://lo-cal-store.herokuapp.com/](https://lo-cal-store.herokuapp.com/).
+You can see the simple, responsive app here: [https://lo-cal-store.herokuapp.com/](https://lo-cal-store.herokuapp.com/) (**Note**: the basket icon is clickable, and will take you to the basket screen).
 
 The code can be found [here](https://github.com/nkhil/local-store).
 
