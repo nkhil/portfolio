@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'Setting up an express service using Swagger 3.0',
+    description: 'quick tutorial on setting up a simple express service using swagger 3.0. ',
+    path: '/open-api-swagger-3-setup',
+  },
+  {
     title: 'How mutating state can lead to bugs in software',
     description: 'Some examples of how mutating state can introduce unexpected bugs',
     path: '/functional-programming-mutating-state-bugs',
@@ -42,6 +47,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'Setting up an express service using Swagger 3.0',
+    description: 'quick tutorial on setting up a simple express service using swagger 3.0. ',
+    path: '/open-api-swagger-3-setup',
+  },
   {
     title: 'How mutating state can lead to bugs in software',
     description: 'Some examples of how mutating state can introduce unexpected bugs',
