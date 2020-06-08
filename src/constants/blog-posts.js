@@ -25,9 +25,9 @@ export const featuredBlogs = [
     path: '/unit-testing-sinon-sandbox',
   },
   {
-    title: 'Understanding hoisting in JavaScript',
-    description: 'How variables get hoisted, and the difference between using const, let and var.',
-    path: '/understanding-hoisting',
+    title: 'Quickly change k8s context using kubectl',
+    description: 'Some shortcuts & a bach function to help change contexts',
+    path: '/kubernetes-kubectl-get-change-context',
   },
   {
     title: 'Examples of closures in JavaScript',
@@ -39,14 +39,14 @@ export const featuredBlogs = [
     description: 'How I started writing more readable & testable functions',
     path: '/love-ruby',
   },
-  {
-    title: 'Using Sinon calledWith to assert that a function was called correctly',
-    description: 'Using Sinon to unit test better',
-    path: '/using-sinon-js-calledwith',
-  },
 ];
 
 export const allPosts = [
+  {
+    title: 'Quickly change k8s context using kubectl',
+    description: 'Some shortcuts & a bach function to help change contexts',
+    path: '/kubernetes-kubectl-get-change-context',
+  },
   {
     title: 'Setting up an express service using Swagger 3.0',
     description: 'quick tutorial on setting up a simple express service using swagger 3.0. ',
