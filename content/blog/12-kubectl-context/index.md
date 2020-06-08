@@ -6,6 +6,7 @@ posttype: "blog"
 category: "javascript"
 description: ""
 ---
+![test img](./k8.png)
 
 Quick post to list kubectl commands to view and change contexts, as I had to search around quite a bit. 
 
@@ -43,3 +44,4 @@ function change-context()
   fi
 }
 ```
+For more Kubectl context and configuration options, [click here](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-context-and-configuration).

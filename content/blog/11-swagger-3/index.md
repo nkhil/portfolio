@@ -9,7 +9,7 @@ description: ""
 
 This is a quick tutorial on setting up a simple express service using swagger 3.0. 
 
-Note: _If you'd like to know why creating API definitions might be a good idea, [this is a good read](https://swagger.io/blog/api-development/why-you-should-create-an-api-definition/)._
+**Note:** _If you'd like to know why creating API definitions might be a good idea, [this is a good read](https://swagger.io/blog/api-development/why-you-should-create-an-api-definition/)._
 
 The biggest advantage of Swagger 3.0 that I've discovered are:
 
