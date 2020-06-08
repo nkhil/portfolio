@@ -9,6 +9,8 @@ description: ""
 
 This is a quick tutorial on setting up a simple express service using swagger 3.0. 
 
+Here's the Github repo if you want to jump straight into the code: [https://github.com/nkhil/swagger-3-setup](https://github.com/nkhil/swagger-3-setup). 
+
 **Note:** _If you'd like to know why creating API definitions might be a good idea, [this is a good read](https://swagger.io/blog/api-development/why-you-should-create-an-api-definition/)._
 
 The biggest advantage of Swagger 3.0 that I've discovered are:
@@ -33,6 +35,7 @@ In the place of having traditional routers, swagger lets us define the functions
 ## Starting with a basic express service
 
 Here's [a branch you can clone that starts you off with the basic express service](https://github.com/nkhil/swagger-3-setup/tree/express-scaffolding).
+
 
 ## Add Swagger definitions
 
