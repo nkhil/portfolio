@@ -74,8 +74,13 @@ const BlogContainer = styled.div`
   }
 
   ul {
+    text-indent: -5px;
+
     li {
       line-height: 1.7;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #282828;
     }
   }
 
