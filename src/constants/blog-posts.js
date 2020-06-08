@@ -1,7 +1,7 @@
 export const featuredBlogs = [
   {
-    title: 'Setting up an express service using Swagger 3.0',
-    description: 'quick tutorial on setting up a simple express service using swagger 3.0. ',
+    title: 'Using Swagger 3.0 for request & response validation',
+    description: 'quick tutorial on setting up a simple express service using swagger 3.0',
     path: '/open-api-swagger-3-setup',
   },
   {
@@ -25,8 +25,8 @@ export const featuredBlogs = [
     path: '/unit-testing-sinon-sandbox',
   },
   {
-    title: 'Quickly change k8s context using kubectl',
-    description: 'Some shortcuts & a bach function to help change contexts',
+    title: 'How to quickly change kubernetes contexts using kubectl',
+    description: 'Some shortcuts & a bash function to quickly change contexts',
     path: '/kubernetes-kubectl-get-change-context',
   },
   {
@@ -43,13 +43,13 @@ export const featuredBlogs = [
 
 export const allPosts = [
   {
-    title: 'Quickly change k8s context using kubectl',
-    description: 'Some shortcuts & a bach function to help change contexts',
+    title: 'How to quickly change kubernetes contexts using kubectl',
+    description: 'Some shortcuts & a bash function to quickly change contexts',
     path: '/kubernetes-kubectl-get-change-context',
   },
   {
-    title: 'Setting up an express service using Swagger 3.0',
-    description: 'quick tutorial on setting up a simple express service using swagger 3.0. ',
+    title: 'Using Swagger 3.0 for request & response validation',
+    description: 'quick tutorial on setting up a simple express service using swagger 3.0',
     path: '/open-api-swagger-3-setup',
   },
   {
