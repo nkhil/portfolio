@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/display-name */
 import React from 'react';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
@@ -17,7 +16,7 @@ export default ({ data }) => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Hey, I'm Nikhil.</title>
-      <link rel="canonical" href="http://mysite.com/example" />
+      <meta name="description" content="Nikhil Vijayan is a software developer from London." />
     </Helmet>
 
     <Layout>

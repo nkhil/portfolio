@@ -16,7 +16,7 @@ function BlogPage({ className }) {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Nikhil Vijayan - Blog</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="Blog posts written by Nikhil Vijayan" />
       </Helmet>
       <Layout>
         <div className="section-container">
