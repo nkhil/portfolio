@@ -18,7 +18,7 @@ const StyledLogo = styled(Logo)`
   padding-left: 50px;
   border-radius: 50%;
   background-color: black;
-  padding: 10px;
+  padding: 12px;
 
   a {
     text-decoration: none;
@@ -28,7 +28,7 @@ const StyledLogo = styled(Logo)`
   p {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     margin: 0;
     line-height: 0.8;
