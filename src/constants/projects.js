@@ -6,6 +6,7 @@ import train from '../../static/images/train.png';
 import brexit from '../../static/images/brexit.png';
 import pineapple from '../../static/images/pineapple-icon.png';
 import react from '../../static/images/react.png';
+import mail from '../../static/images/mail.png';
 
 export const featuredProjects = [
   {
@@ -25,6 +26,12 @@ export const featuredProjects = [
     description: 'Daily journalling web app built using React',
     path: '/pineapple-journaling-app',
     src: pineapple,
+  },
+  {
+    title: 'Tracking royal mail packages with node',
+    description: 'I wrote a puppeteer script to track package deliveries',
+    path: '/track-royal-mail-packages-with-puppeteer-script',
+    src: mail,
   },
   {
     title: 'HTTP Status code checker',
@@ -53,6 +60,12 @@ export const featuredProjects = [
 ];
 
 export const projects = [
+  {
+    title: 'Tracking royal mail packages with node',
+    description: 'I wrote a puppeteer script to track package deliveries',
+    path: '/track-royal-mail-packages-with-puppeteer-script',
+    src: mail,
+  },
   {
     title: 'Managing state without redux',
     description: 'Playing around with the react useContext and useReducer API to manage state',
