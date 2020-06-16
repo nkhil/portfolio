@@ -39,6 +39,11 @@ export const featuredBlogs = [
     description: 'How I started writing more readable & testable functions',
     path: '/love-ruby',
   },
+  {
+    title: 'Using Sinon calledWith to assert that a function was called correctly',
+    description: 'Using Sinon to unit test better',
+    path: '/using-sinon-js-calledwith',
+  },
 ];
 
 export const allPosts = [
