@@ -20,11 +20,11 @@ function Footer({ className }) {
           <FooterIcon icon={FaStackOverflow} url={urls.stackOverflow} />
         </div>
         <p>
-          Made with <Emoji symbol="♥️" label="love" /> using Gatsby.
-        </p>
-        <p>
-          If you spot any typos or corrections, please feel free to make a{' '}
-          <a href="https://github.com/nkhil/portfolio">pull request</a>
+          The{' '}
+          <a href="https://github.com/nkhil/portfolio.git" target="_blank" rel="noopener noreferrer">
+            code for this site
+          </a>{' '}
+          is available for free under an MIT license.
         </p>
       </div>
     </div>
