@@ -7,7 +7,9 @@ function Logo({ className }) {
   return (
     <div className={className}>
       <Link to="/">
-        <p>N</p>
+        <div className="circle">
+          <p>N</p>
+        </div>
       </Link>
     </div>
   );
@@ -16,9 +18,6 @@ function Logo({ className }) {
 const StyledLogo = styled(Logo)`
   margin-right: auto;
   padding-left: 50px;
-  border-radius: 50%;
-  background-color: black;
-  padding: 12px;
 
   a {
     text-decoration: none;
@@ -27,7 +26,7 @@ const StyledLogo = styled(Logo)`
 
   p {
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 200;
     font-size: 1.7rem;
     text-transform: uppercase;
     margin: 0;
@@ -37,6 +36,12 @@ const StyledLogo = styled(Logo)`
 
   .small-text {
     font-size: 0.7rem;
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: #282828;
+    padding: 12px;
   }
 
   &:hover {
