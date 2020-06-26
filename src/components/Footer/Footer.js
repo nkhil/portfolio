@@ -51,6 +51,7 @@ const StyledFooter = styled(Footer)`
       font-size: 1rem;
       font-weight: 200;
       text-align: center;
+      line-height: 1.5;
 
       a {
         color: white;
