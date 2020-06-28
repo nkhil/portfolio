@@ -7,6 +7,7 @@ import brexit from '../../static/images/brexit.png';
 import pineapple from '../../static/images/pineapple-icon.png';
 import react from '../../static/images/react.png';
 import mail from '../../static/images/mail.png';
+import cloud from '../../static/images/cloud.png';
 
 export const featuredProjects = [
   {
@@ -44,6 +45,12 @@ export const featuredProjects = [
     description: "I designed and built a responsive site for a friend's school using Gatsby JS",
     path: '/responsive-school-website',
     src: school,
+  },
+  {
+    title: 'Weather CLI tool',
+    description: 'A quick project to get the weather in your command line',
+    path: '/weather-command-line',
+    src: cloud,
   },
   {
     title: 'Bombay train map',
