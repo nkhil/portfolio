@@ -5,6 +5,11 @@ export const featuredBlogs = [
     path: '/open-api-swagger-3-setup',
   },
   {
+    title: 'How require and module.exports in node works',
+    description: 'How node runs your code',
+    path: '/how-require-module-exports-in-node-works',
+  },
+  {
     title: 'How mutating state can lead to bugs in software',
     description: 'Some examples of how mutating state can introduce unexpected bugs',
     path: '/functional-programming-mutating-state-bugs',
@@ -47,6 +52,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'How require and module.exports in node works',
+    description: 'How node runs your code',
+    path: '/how-require-module-exports-in-node-works',
+  },
   {
     title: 'How to quickly change kubernetes contexts using kubectl',
     description: 'Some shortcuts & a bash function to quickly change contexts',

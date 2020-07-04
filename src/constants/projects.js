@@ -68,6 +68,12 @@ export const featuredProjects = [
 
 export const projects = [
   {
+    title: 'Weather CLI tool',
+    description: 'A quick project to get the weather in your command line',
+    path: '/weather-command-line',
+    src: cloud,
+  },
+  {
     title: 'Tracking royal mail packages with node',
     description: 'I wrote a puppeteer script to track package deliveries',
     path: '/track-royal-mail-packages-with-puppeteer-script',
