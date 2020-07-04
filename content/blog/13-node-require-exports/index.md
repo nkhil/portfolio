@@ -67,7 +67,7 @@ Every time you run a file using node (eg: `node someFile.js`), the file is loade
 and the function looks like this:
 
 ```javascript
-(function (exports, require, module, __filename, __dirname)
+(function (exports, require, module, __filename, __dirname)())
 ```
 
 `exports` is essentially an alias or a reference to `module.exports`, which is why you can do this:
