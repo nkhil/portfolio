@@ -5,6 +5,11 @@ export const featuredBlogs = [
     path: '/open-api-swagger-3-setup',
   },
   {
+    title: '5 things that happen every time you require a file in node',
+    description: "How node's require works",
+    path: '/5-things-that-happen-node-require',
+  },
+  {
     title: 'How require and module.exports in node works',
     description: 'How node runs your code',
     path: '/how-require-module-exports-in-node-works',
