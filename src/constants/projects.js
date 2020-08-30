@@ -8,6 +8,7 @@ import pineapple from '../../static/images/pineapple-icon.png';
 import react from '../../static/images/react.png';
 import mail from '../../static/images/mail.png';
 import cloud from '../../static/images/cloud.png';
+import spending from '../../static/images/spending.png';
 
 export const featuredProjects = [
   {
