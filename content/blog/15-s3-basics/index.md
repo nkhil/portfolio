@@ -1,7 +1,7 @@
 ---
 path: "/aws-s3-create-bucket-copy-files-localstack"
 date: "14/02/2019"
-title: "How to create a new s3 bucket and add files to a specific folder using local stack"
+title: "How to create a new S3 bucket and add files to a specific folder using local stack"
 posttype: "blog"
 category: "javascript"
 description: ""
@@ -16,7 +16,7 @@ At the time of writing this post (Oct 2020), the S3 service is available on port
 
 ## Install the aws / localstack wrapper
 
-Install awscli-local from here as a wrapper around localstack. This will allow you to use awslocal in your command line, which is very close to the aws command usage.
+Install awscli-local from here as a wrapper around localstack. This will allow you to use `awslocal` in your command line, which is very close to the aws command usage.
 
 ## Create a new bucket
 
@@ -28,7 +28,7 @@ awslocal s3api create-bucket --bucket business-time-nonprod --region eu-west-1
 
 ## Create a new folder inside your newly created bucket
 
-The easiest way I found to create a new folder is to use the put-object api.
+The easiest way I found to create a new folder is to use the `put-object` api.
 
 ```bash
 awslocal s3api put-object --bucket business-time-nonprod --key some/folder/name/here/
@@ -39,7 +39,7 @@ awslocal s3api put-object --bucket business-time-nonprod --key some/folder/name/
 
 ## Add a new file to it
 
-We’re going to copy over a file into the nested here folder you just created.
+We’re going to copy over a file into the nested `/here` folder you just created.
 
 ```bash
 touch helloworld.txt # Create a file if you don't already have it
