@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'How to create an S3 bucket and add files and tags to it',
+    description: 'Using localstack to develop on AWS locally',
+    path: '/aws-s3-create-bucket-copy-files-localstack',
+  },
+  {
     title: 'Using Swagger 3.0 for request & response validation',
     description: 'quick tutorial on setting up a simple express service using swagger 3.0',
     path: '/open-api-swagger-3-setup',
@@ -57,6 +62,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'How to create an S3 bucket and add files and tags to it',
+    description: 'Using localstack to develop on AWS locally',
+    path: '/aws-s3-create-bucket-copy-files-localstack',
+  },
   {
     title: 'How require and module.exports in node works',
     description: 'How node runs your code',
