@@ -22,7 +22,7 @@ export default function Template({
         <PostContainer>
           <h1>{post.frontmatter.title}</h1>
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-          <RelatedBlogPosts />
+          <RelatedBlogPosts currentPath={post.frontmatter.path} />
         </PostContainer>
         <Footer />
       </Layout>
