@@ -4,12 +4,15 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { featuredBlogs } from '../constants/blog-posts';
 
-function RelatedBlogPosts({ className }) {
+function RelatedBlogPosts({ className, currentPath }) {
+
+  const blogPosts = featuredBlogs.filter(post => post.path != currentPath);
+
   return (
     <div className={className}>
       <h2>Other posts I've written</h2>
       <ul>
-        {featuredBlogs.map(post => (
+        {blogPosts.map(post => (
           <li>
             <Link to={post.path}>{post.title}</Link>
           </li>
