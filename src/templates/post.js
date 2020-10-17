@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Footer from '../components/Footer/Footer';
-
+import RelatedBlogPosts from '../components/RelatedBlogs';
 import PostContainer from '../components/PostContainer';
 
 export default function Template({
@@ -22,6 +22,7 @@ export default function Template({
         <PostContainer>
           <h1>{post.frontmatter.title}</h1>
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <RelatedBlogPosts />
         </PostContainer>
         <Footer />
       </Layout>
