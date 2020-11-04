@@ -48,6 +48,8 @@ const StyledNavbar = styled(Navbar)`
 
   li {
     font-size: 1rem;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
 
     a {
       &:hover {
@@ -69,18 +71,18 @@ const StyledNavbar = styled(Navbar)`
     transition: all 0.2s ease-out;
 
     ${props => {
-      if (props.isOpen) {
-        return css`
+    if (props.isOpen) {
+      return css`
           opacity: 1;
           height: auto;
         `;
-      }
-      return css`
+    }
+    return css`
         opacity: 0;
         height: 0;
         overflow: hidden;
       `;
-    }}
+  }}
 
     ul {
       display: flex;

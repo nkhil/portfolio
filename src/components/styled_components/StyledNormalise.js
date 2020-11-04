@@ -7,9 +7,11 @@ const GlobalStyle = createGlobalStyle`
 
   @import url('https://rsms.me/inter/inter.css');
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
-  html { font-family: 'Inter', sans-serif; }
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+  html { font-family: 'IBM Plex Sans', sans-serif; }
 
   html, body {
+  font-family: 'IBM Plex Sans';
 	height: 100%;
 	font-size: 1em;
 	margin: auto;

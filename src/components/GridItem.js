@@ -59,19 +59,21 @@ const StyledGridItem = styled(GridItem)`
   }
 
   h2 {
-    font-family: 'Poppins';
+    font-family: 'IBM Plex Sans';
     padding: 10px 20px 5px 20px;
     font-size: 1.5rem;
-    line-height: 1.4;
+    line-height: 1.2;
     text-align: center;
     margin: 20px 0 5px 0;
     color: black;
-    font-weight: 550;
+    font-weight: 700;
   }
 
   p {
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
     padding: 0px 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     line-height: 1.5;
     margin: 0px 0px 20px 0px;

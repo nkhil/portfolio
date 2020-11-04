@@ -41,17 +41,19 @@ const StyledHero = styled(Hero)`
       .hero-container-strap-paragraph {
         width: 480px;
         p {
+          font-family: 'IBM Plex Sans';
           font-size: 1.5rem;
           line-height: 1.5;
           color: black;
           margin: 5px 0;
-          font-weight: 320;
+          font-weight: 400;
           padding-left: 5px;
         }
       }
 
       h1 {
-        font-family: 'Poppins';
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
         font-size: 3rem;
         color: black;
         margin: 0px;
