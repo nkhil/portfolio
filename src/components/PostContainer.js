@@ -9,20 +9,24 @@ const BlogContainer = styled.div`
   flex-direction: column;
   color: #282828;
   margin-top: 100px;
+  font-family: 'IBM Plex Sans';
 
   h1 {
-    font-family: 'Poppins';
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
     font-size: 3.5rem;
     margin-bottom: 0px;
     line-height: 1.2;
   }
 
   h2 {
+    font-family: 'IBM Plex Sans';
     font-size: 2rem;
     line-height: 1.2;
   }
 
   h3 {
+    font-family: 'IBM Plex Sans';
     font-size: 1.8rem;
     line-height: 1.2;
   }
@@ -30,7 +34,7 @@ const BlogContainer = styled.div`
   p {
     line-height: 1.9;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #282828;
   }
 

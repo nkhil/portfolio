@@ -38,6 +38,7 @@ function BlogPage({ className }) {
 
 const StyledBlogPage = styled(BlogPage)`
   .section-container {
+    font-family: 'IBM Plex Sans';
     max-width: ${width.containerWidth};
     margin: auto;
     padding: 50px 0;

@@ -25,13 +25,13 @@ const StyledLogo = styled(Logo)`
   }
 
   p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 1.7rem;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
     line-height: 0.8;
-    color: white;
+    color: #000;
   }
 
   .small-text {
@@ -40,7 +40,7 @@ const StyledLogo = styled(Logo)`
 
   .circle {
     border-radius: 50%;
-    background-color: #282828;
+    background-color: #e8eafe;
     padding: 12px;
   }
 

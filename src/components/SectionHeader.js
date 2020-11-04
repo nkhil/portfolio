@@ -11,7 +11,8 @@ const StyledSectionHeader = styled(SectionHeader)`
   margin-top: ${props => (props.marginTop ? props.marginTop : '100px')};
 
   h2 {
-    font-family: 'Poppins';
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
     font-size: 3.6rem;
     margin-bottom: 10px;
     margin-top: 0;
@@ -19,6 +20,7 @@ const StyledSectionHeader = styled(SectionHeader)`
   }
 
   p {
+    font-family: 'IBM Plex Sans';
     font-size: 1.8rem;
     margin-top: 5px;
     margin-bottom: 30px;

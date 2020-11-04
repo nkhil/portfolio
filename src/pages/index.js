@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
-import BlogPost from '../components/BlogPost';
+import BlogPosts from '../components/BlogPost';
 import Footer from '../components/Footer/Footer';
 import { featuredProjects } from '../constants/projects';
 import { featuredBlogs } from '../constants/blog-posts';
@@ -22,7 +22,7 @@ export default ({ data }) => (
     <Layout>
       <Hero />
       <Projects data={featuredProjects} />
-      <BlogPost data={featuredBlogs} />
+      <BlogPosts data={featuredBlogs} />
       <Footer />
     </Layout>
   </>
