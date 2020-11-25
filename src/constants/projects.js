@@ -8,6 +8,7 @@ import pineapple from '../../static/images/pineapple-icon.png';
 import react from '../../static/images/react.png';
 import mail from '../../static/images/mail.png';
 import cloud from '../../static/images/cloud.png';
+import rocket from '../../static/images/rocket.png';
 import spending from '../../static/images/spending.png';
 
 export const featuredProjects = [
@@ -16,6 +17,12 @@ export const featuredProjects = [
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
+  },
+  {
+    title: 'London startups',
+    description: 'a website that aggregates startups from London',
+    path: '/london-startups',
+    src: rocket,
   },
   {
     title: 'Managing state without redux',
