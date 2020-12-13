@@ -1,5 +1,11 @@
 export const featuredBlogs = [
   {
+    title: 'Quick gotcha: localstack returning BadRequest',
+    description:
+      'a quick gotcha if you keep getting `BadRequest` without a useful error message trying to connect another container to localstack S3',
+    path: '/localstack-container-badrequest-error',
+  },
+  {
     title: 'How to create an S3 bucket and add files and tags to it',
     description: 'Using localstack to develop on AWS locally',
     path: '/aws-s3-create-bucket-copy-files-localstack',
@@ -62,6 +68,12 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'Quick gotcha: localstack returning BadRequest',
+    description:
+      'a quick gotcha if you keep getting `BadRequest` without a useful error message trying to connect another container to localstack S3',
+    path: '/localstack-container-badrequest-error',
+  },
   {
     title: 'How to create an S3 bucket and add files and tags to it',
     description: 'Using localstack to develop on AWS locally',
