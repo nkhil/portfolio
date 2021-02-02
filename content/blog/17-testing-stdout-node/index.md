@@ -6,6 +6,7 @@ posttype: "blog"
 category: "javascript"
 description: ""
 ---
+![test img](./stdout.png)
 
 I’m writing this for all of you who’ve been searching for terms like:
 - How to test stdout in Node
@@ -23,15 +24,16 @@ The test case essentially was the following:
 ```javascript
 // when I log multiple params using the logger
 logger.info('something1', 'something2');
+
 // then I see this in stdout
 {"level":30,"time":1612227699012,"msg":"something1 something2","pid":69753,"hostname":"whatever","v":1}
 ```
 
-Once we were able to access the output, we’d be able to JSON.parse() it, and assert against the value of msg in the example above.
+Once we were able to access the output, we’d be able to `JSON.parse()` it, and assert against the value of msg in the example above.
 
 ## The working solution ✅
 
-The solution was to spawn a child process in node, then listen to the EventEmitter on.(‘data’) event to do our assertion.
+The solution was to spawn a child process in node, then listen to the EventEmitter `on.(‘data’)` event to do our assertion.
 
 **The setup**
 
@@ -80,8 +82,8 @@ describe('logger behaviour', () => {
 - We set up a logger file that will log things to stdout (logger.js in the example above)
 - We spawn a new child process
 - We use the newly spawned child process to run node logger.js (which logs things to stdout
-- We ‘listen’ to the data being logger using the child_process.stdout.on('data', (data) => <do stuff with data>) pattern.
-- We JSON.parse() this data, which lets us assert against values we’re logging out
+- We ‘listen’ to the data being logger using the `child_process.stdout.on('data', (data) => <do stuff with data>)` pattern.
+- We `JSON.parse()` this data, which lets us assert against values we’re logging out
 - Final step: Profit 💲💲💲
 
 ## Things that we tried that didn’t work 🙅
@@ -90,4 +92,4 @@ Initially, we were trying to use the EventEmitter’s `.on('data', (callback) =>
 
 Another thing I tried that didn’t work was spying on stdout using Jest. Luckily, I found [this recent Jest issue](https://github.com/facebook/jest/issues/9984) that hinted that this wouldn’t work because of how Jest was written.
 
-Hope that helps you!
+Hope this helps you in some way!
