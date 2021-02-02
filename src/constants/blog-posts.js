@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'Testing stdout in Node.js using Jest',
+    description: 'How to assert against stdout output in Node.js',
+    path: '/testing-stdout-in-node-js-jest',
+  },
+  {
     title: 'Quick gotcha: localstack returning BadRequest',
     description:
       'a quick gotcha if you keep getting `BadRequest` without a useful error message trying to connect another container to localstack S3',
@@ -68,6 +73,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'Testing stdout in Node.js using Jest',
+    description: 'How to assert against stdout output in Node.js',
+    path: '/testing-stdout-in-node-js-jest',
+  },
   {
     title: 'Quick gotcha: localstack returning BadRequest',
     description:
