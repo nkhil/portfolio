@@ -10,6 +10,7 @@ import mail from '../../static/images/mail.png';
 import cloud from '../../static/images/cloud.png';
 import rocket from '../../static/images/rocket.png';
 import spending from '../../static/images/spending.png';
+import secretHelper from '../../static/images/secret_helper.png';
 
 export const featuredProjects = [
   {
@@ -17,6 +18,12 @@ export const featuredProjects = [
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
+  },
+  {
+    title: 'Secret Helper',
+    description: 'A helper library for creating api keys, hashing and verifying hashes.',
+    path: '/secret-helper-library',
+    src: secretHelper,
   },
   {
     title: 'London startups',
