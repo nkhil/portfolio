@@ -11,19 +11,26 @@ import cloud from '../../static/images/cloud.png';
 import rocket from '../../static/images/rocket.png';
 import spending from '../../static/images/spending.png';
 import secretHelper from '../../static/images/secret_helper.png';
+import leaderboardLogo from '../../static/images/leaderboard_logo.png';
 
 export const featuredProjects = [
   {
-    title: 'Raspberry pi weather display',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
-    path: '/raspberry-pi-zero-weather-display',
-    src: raspberry,
+    title: 'Leaderboard API',
+    description: 'An API to manage scoreboards and leaderboards',
+    path: '/leaderboard-api',
+    src: leaderboardLogo,
   },
   {
     title: 'Secret Helper',
     description: 'A helper library for creating api keys, hashing and verifying hashes.',
     path: '/secret-helper-library',
     src: secretHelper,
+  },
+  {
+    title: 'Raspberry pi weather display',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    path: '/raspberry-pi-zero-weather-display',
+    src: raspberry,
   },
   {
     title: 'London startups',
