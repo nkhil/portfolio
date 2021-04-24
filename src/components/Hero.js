@@ -2,22 +2,25 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
+import FadeIn from 'react-fade-in';
 import HeroImage from './HeroImage';
 import colours from '../constants/colours';
 import width from '../constants/width';
 
 const Hero = ({ className }) => (
-  <div className={className}>
-    <div className="hero-container">
-      <HeroImage />
-      <div className="hero-container-strap">
-        <h1>Hey, I'm Nikhil</h1>
-        <div className="hero-container-strap-paragraph">
-          <p>I’m a software developer who loves making things.</p>
+  <FadeIn>
+    <div className={className}>
+      <div className="hero-container">
+        <HeroImage />
+        <div className="hero-container-strap">
+          <h1>Hey, I'm Nikhil</h1>
+          <div className="hero-container-strap-paragraph">
+            <p>I’m a software developer who loves making things.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </FadeIn>
 );
 
 const StyledHero = styled(Hero)`

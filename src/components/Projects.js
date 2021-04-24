@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import FadeIn from 'react-fade-in';
 import GridItem from './GridItem';
 import GridContainer from './styled_components/GridContainer';
 import SectionHeader from './SectionHeader';
@@ -10,22 +11,24 @@ import width from '../constants/width';
 
 function Projects({ data, className }) {
   return (
-    <div className={className}>
-      <div className="section-container">
-        <SectionHeader marginTop="0px">
-          <h2>Projects</h2>
-          <p>Here are some things I've made recently</p>
-        </SectionHeader>
-        <GridContainer>
-          {data.map((project, index) => (
-            <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
-          ))}
-        </GridContainer>
-        <div className="section-link">
-          <Link to="/projects">See all projects</Link>
+    <FadeIn delay={350}>
+      <div className={className}>
+        <div className="section-container">
+          <SectionHeader marginTop="0px">
+            <h2>Projects</h2>
+            <p>Here are some things I've made recently</p>
+          </SectionHeader>
+          <GridContainer>
+            {data.map((project, index) => (
+              <GridItem index={index} project={project} key={index} style={{ listStyleType: 'none' }} />
+            ))}
+          </GridContainer>
+          <div className="section-link">
+            <Link to="/projects">See all projects</Link>
+          </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }
 
