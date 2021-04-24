@@ -90,6 +90,18 @@ export const featuredProjects = [
 
 export const projects = [
   {
+    title: 'Leaderboard API',
+    description: 'An API to manage scoreboards and leaderboards',
+    path: '/leaderboard-api',
+    src: leaderboardLogo,
+  },
+  {
+    title: 'Secret Helper',
+    description: 'A helper library for creating api keys, hashing and verifying hashes.',
+    path: '/secret-helper-library',
+    src: secretHelper,
+  },
+  {
     title: 'Weather CLI tool',
     description: 'A quick project to get the weather in your command line',
     path: '/weather-command-line',
