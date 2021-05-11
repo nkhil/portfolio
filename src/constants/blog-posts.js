@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'How to Mock AWS S3 in a Jest (Unit) Test',
+    description: 'Using jest.fn to mock aws-sdk',
+    path: '/how-to-mock-s3-jest-unit-test',
+  },
+  {
     title: 'Testing stdout in Node.js using Jest',
     description: 'How to assert against stdout output in Node.js',
     path: '/testing-stdout-in-node-js-jest',
@@ -73,6 +78,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'How to Mock AWS S3 in a Jest (Unit) Test',
+    description: 'Using jest.fn to mock aws-sdk',
+    path: '/how-to-mock-s3-jest-unit-test',
+  },
   {
     title: 'Testing stdout in Node.js using Jest',
     description: 'How to assert against stdout output in Node.js',
