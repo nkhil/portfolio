@@ -27,28 +27,16 @@ export const featuredProjects = [
     src: secretHelper,
   },
   {
+    title: 'HTTP Status code checker',
+    description: 'Offline reference tool for quickly referencing HTTP status codes. ',
+    path: '/http-status-code-checker',
+    src: stts,
+  },
+  {
     title: 'Raspberry pi weather display',
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
-  },
-  {
-    title: 'London startups',
-    description: 'a website that aggregates startups from London',
-    path: '/london-startups',
-    src: rocket,
-  },
-  {
-    title: 'Managing state without redux',
-    description: 'Playing around with the react useContext and useReducer API to manage state',
-    path: '/react-state-management-using-usereducer-and-usecontext',
-    src: react,
-  },
-  {
-    title: 'Pineapple Journal',
-    description: 'Daily journalling web app built using React',
-    path: '/pineapple-journaling-app',
-    src: pineapple,
   },
   {
     title: 'Tracking royal mail packages with node',
@@ -57,34 +45,10 @@ export const featuredProjects = [
     src: mail,
   },
   {
-    title: 'HTTP Status code checker',
-    description: 'Offline reference tool for quickly referencing HTTP status codes. ',
-    path: '/http-status-code-checker',
-    src: stts,
-  },
-  {
-    title: 'Responsive website for a school',
-    description: "I designed and built a responsive site for a friend's school using Gatsby JS",
-    path: '/responsive-school-website',
-    src: school,
-  },
-  {
-    title: 'Weather CLI tool',
-    description: 'A quick project to get the weather in your command line',
-    path: '/weather-command-line',
-    src: cloud,
-  },
-  {
-    title: 'Bombay train map',
-    description: 'I designed a London-inspired map for the train lines in Bombay.',
-    path: '/bombay-train-map-design',
-    src: train,
-  },
-  {
-    title: 'Brexit means Breadsticks',
-    description: 'A Chrome extension that turns every mention of Brexit into Breadsticks.',
-    path: '/brexit-means-breadsticks-chrome-extension',
-    src: brexit,
+    title: 'London startups',
+    description: 'a website that aggregates startups from London',
+    path: '/london-startups',
+    src: rocket,
   },
 ];
 
