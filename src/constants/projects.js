@@ -27,6 +27,12 @@ export const featuredProjects = [
     src: secretHelper,
   },
   {
+    title: 'Spending tracker',
+    description: 'A lightweight spending tracker web app built using react',
+    path: '/spending-tracker',
+    src: spending,
+  },
+  {
     title: 'HTTP Status code checker',
     description: 'Offline reference tool for quickly referencing HTTP status codes. ',
     path: '/http-status-code-checker',
@@ -37,12 +43,6 @@ export const featuredProjects = [
     description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
-  },
-  {
-    title: 'Tracking royal mail packages with node',
-    description: 'I wrote a puppeteer script to track package deliveries',
-    path: '/track-royal-mail-packages-with-puppeteer-script',
-    src: mail,
   },
   {
     title: 'London startups',
@@ -64,6 +64,12 @@ export const projects = [
     description: 'A helper library for creating api keys, hashing and verifying hashes.',
     path: '/secret-helper-library',
     src: secretHelper,
+  },
+  {
+    title: 'Spending tracker',
+    description: 'A lightweight spending tracker web app built using react',
+    path: '/spending-tracker',
+    src: spending,
   },
   {
     title: 'Weather CLI tool',
