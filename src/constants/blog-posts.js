@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'How to redact sensitive information from logs',
+    description: 'Using pino and pino-noir to redact things',
+    path: '/how-to-redact-sensitive-information-node-pino-noir',
+  },
+  {
     title: 'How to Mock AWS S3 in a Jest (Unit) Test',
     description: 'Using jest.fn to mock aws-sdk',
     path: '/how-to-mock-s3-jest-unit-test',
@@ -8,12 +13,6 @@ export const featuredBlogs = [
     title: 'Testing stdout in Node.js using Jest',
     description: 'How to assert against stdout output in Node.js',
     path: '/testing-stdout-in-node-js-jest',
-  },
-  {
-    title: 'Quick gotcha: localstack returning BadRequest',
-    description:
-      'a quick gotcha if you keep getting `BadRequest` without a useful error message trying to connect another container to localstack S3',
-    path: '/localstack-container-badrequest-error',
   },
   {
     title: 'How to create an S3 bucket and add files and tags to it',
@@ -78,6 +77,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'How to redact sensitive information from logs',
+    description: 'Using pino and pino-noir to redact things',
+    path: '/how-to-redact-sensitive-information-node-pino-noir',
+  },
   {
     title: 'How to Mock AWS S3 in a Jest (Unit) Test',
     description: 'Using jest.fn to mock aws-sdk',
