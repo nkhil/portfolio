@@ -1,5 +1,5 @@
 ---
-path: "/how-to-mock-s3-jest-unit-test"
+path: "/how-to-redact-sensitive-information-node-pino-noir"
 date: "03/06/2021"
 title: "How to redact sensitive information from logs using Pino & Pino Noir"
 posttype: "blog"
