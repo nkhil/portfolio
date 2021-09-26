@@ -12,8 +12,15 @@ import rocket from '../../static/images/rocket.png';
 import spending from '../../static/images/spending.png';
 import secretHelper from '../../static/images/secret_helper.png';
 import leaderboardLogo from '../../static/images/leaderboard_logo.png';
+import cnv from '../../static/images/cnv.png';
 
 export const featuredProjects = [
+  {
+    title: 'CNV: a command line unit converter',
+    description: 'npm module to convert units in the command line',
+    path: '/cnv-convert-units-in-command-line',
+    src: cnv,
+  },
   {
     title: 'Leaderboard API',
     description: 'An API to manage scoreboards and leaderboards',
@@ -22,7 +29,7 @@ export const featuredProjects = [
   },
   {
     title: 'Secret Helper',
-    description: 'A helper library for creating api keys, hashing and verifying hashes.',
+    description: 'A helper library for creating api keys, hashing and verifying hashes',
     path: '/secret-helper-library',
     src: secretHelper,
   },
@@ -34,13 +41,13 @@ export const featuredProjects = [
   },
   {
     title: 'HTTP Status code checker',
-    description: 'Offline reference tool for quickly referencing HTTP status codes. ',
+    description: 'Offline reference tool for quickly referencing HTTP status codes',
     path: '/http-status-code-checker',
     src: stts,
   },
   {
     title: 'Raspberry pi weather display',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
   },
@@ -54,6 +61,12 @@ export const featuredProjects = [
 
 export const projects = [
   {
+    title: 'CNV: a command line unit converter',
+    description: 'npm module to convert units in the command line',
+    path: '/cnv-convert-units-in-command-line',
+    src: cnv,
+  },
+  {
     title: 'Leaderboard API',
     description: 'An API to manage scoreboards and leaderboards',
     path: '/leaderboard-api',
@@ -61,7 +74,7 @@ export const projects = [
   },
   {
     title: 'Secret Helper',
-    description: 'A helper library for creating api keys, hashing and verifying hashes.',
+    description: 'A helper library for creating api keys, hashing and verifying hashes',
     path: '/secret-helper-library',
     src: secretHelper,
   },
