@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 import NavItems from '../constants/links';
-import Logo from './CssLogo';
+import Logo from './Logo';
 import width from '../constants/width';
 
 function Navbar({ className }) {
@@ -71,18 +71,18 @@ const StyledNavbar = styled(Navbar)`
     transition: all 0.2s ease-out;
 
     ${props => {
-    if (props.isOpen) {
-      return css`
+      if (props.isOpen) {
+        return css`
           opacity: 1;
           height: auto;
         `;
-    }
-    return css`
+      }
+      return css`
         opacity: 0;
         height: 0;
         overflow: hidden;
       `;
-  }}
+    }}
 
     ul {
       display: flex;

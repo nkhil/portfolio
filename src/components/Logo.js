@@ -8,7 +8,7 @@ function Logo({ className, width }) {
   return (
     <div className={className}>
       <Link to="/">
-        <img src={logo} alt="Nikhil" width={width} />
+        <img src={logo} alt="Nikhil" width="60px" />
       </Link>
     </div>
   );
