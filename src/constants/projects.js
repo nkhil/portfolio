@@ -51,12 +51,6 @@ export const featuredProjects = [
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
   },
-  {
-    title: 'London startups',
-    description: 'a website that aggregates startups from London',
-    path: '/london-startups',
-    src: rocket,
-  },
 ];
 
 export const projects = [
