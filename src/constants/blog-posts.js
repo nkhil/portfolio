@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'Convert an OpenSSH key into RSA PKCS1 format',
+    description: 'Using the command line',
+    path: '/convert-openssh-key-to-rsa-pkcs1',
+  },
+  {
     title: 'How to redact sensitive information from logs',
     description: 'Using pino and pino-noir to redact things',
     path: '/how-to-redact-sensitive-information-node-pino-noir',

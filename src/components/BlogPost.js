@@ -5,8 +5,7 @@ import { Link } from 'gatsby';
 import SectionHeader from './SectionHeader';
 import colours from '../constants/colours';
 import width from '../constants/width';
-import GridContainer from './styled_components/GridContainer';
-import GridItem from './GridItem';
+import BlogItem from './BlogItem'
 
 function BlogPost({ data, className }) {
   return (
@@ -16,11 +15,11 @@ function BlogPost({ data, className }) {
           <h2>Writing</h2>
           <p>Here are a few things I've written</p>
         </SectionHeader>
-        <GridContainer>
+        <ul>
           {data.map((blogPost, index) => (
-            <GridItem project={blogPost} index={index} />
+            <BlogItem project={blogPost} index={index} />
           ))}
-        </GridContainer>
+        </ul>
         <div className="section-link">
           <Link to="/blog">See all blog posts</Link>
         </div>

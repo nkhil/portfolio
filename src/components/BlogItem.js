@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-function BlogItem({ blogPost, index, className }) {
-  const { path, title } = blogPost;
+function BlogItem({ project, index, className }) {
+  const { path, title } = project;
 
   return (
     <div className={className}>
@@ -28,26 +28,29 @@ const StyledBlogItem = styled(BlogItem)`
   }
 
   li {
-    width: 100%;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #fff;
-    margin: 20px 0;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     text-decoration: none;
+    border-radius: 5px;
     &:hover {
-      box-shadow: 0px 4px 20px rgba(79, 79, 79, 0.25);
+      border: 1px solid #eee;
+      background-color: #fafafa;
     }
   }
 
   h2 {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
     text-align: center;
   }
 
   @media screen and (max-width: 599px) {
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
   }
 `;
