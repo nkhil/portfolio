@@ -1,3 +1,4 @@
+import abacus from '../../static/images/abacus.png'
 import raspberry from '../../static/images/raspberry.png';
 import stts from '../../static/images/stts.png';
 import fixtureMaker from '../../static/images/fixture.png';
@@ -8,13 +9,25 @@ import pineapple from '../../static/images/pineapple-icon.png';
 import react from '../../static/images/react.png';
 import mail from '../../static/images/mail.png';
 import cloud from '../../static/images/cloud.png';
-import rocket from '../../static/images/rocket.png';
+import performance from '../../static/images/performance.png';
 import spending from '../../static/images/spending.png';
 import secretHelper from '../../static/images/secret_helper.png';
 import leaderboardLogo from '../../static/images/leaderboard_logo.png';
 import cnv from '../../static/images/cnv.png';
 
 export const featuredProjects = [
+  {
+    title: 'Performance test helper',
+    description: 'Utility to test a function\'s performance',
+    path: '/performance-test-helper',
+    src: performance,
+  },
+  {
+    title: 'Remember Numbers',
+    description: 'Convert numbers to memorable words',
+    path: '/remember-numbers',
+    src: abacus,
+  },
   {
     title: 'CNV: a command line unit converter',
     description: 'npm module to convert units in the command line',
@@ -34,26 +47,26 @@ export const featuredProjects = [
     src: secretHelper,
   },
   {
-    title: 'Spending tracker',
-    description: 'A lightweight spending tracker web app built using react',
-    path: '/spending-tracker',
-    src: spending,
-  },
-  {
-    title: 'HTTP Status code checker',
-    description: 'Offline reference tool for quickly referencing HTTP status codes',
-    path: '/http-status-code-checker',
-    src: stts,
-  },
-  {
     title: 'Raspberry pi weather display',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display',
+    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
     path: '/raspberry-pi-zero-weather-display',
     src: raspberry,
   },
 ];
 
 export const projects = [
+  {
+    title: 'Performance test helper',
+    description: 'Utility to test a function\'s performance',
+    path: '/performance-test-helper',
+    src: performance,
+  },
+  {
+    title: 'Remember Numbers',
+    description: 'Convert numbers to memorable words',
+    path: '/remember-numbers',
+    src: abacus,
+  },
   {
     title: 'CNV: a command line unit converter',
     description: 'npm module to convert units in the command line',
