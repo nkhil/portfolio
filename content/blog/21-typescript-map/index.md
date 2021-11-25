@@ -25,7 +25,7 @@ function foo(someKey: string) {
 
 We can use the Typescript Extract keyword like so:
 
-```
+```ts
 type KeyOf<T> = Extract<keyof T, string>
 And our function will now look like so:
 function foo<T>(someKey: KeyOf<T>) {
@@ -39,10 +39,10 @@ If in the example above, `foo` isn’t a key of `T` , you will get a compile/tra
 
 Here’s an example that will get caught if you try to use it.
 
-```js
+```ts
 type Transaction = {
-  merchantName: string,
-  transactionAmount: number,
+  merchantName: string;
+  transactionAmount: number;
 };
 foo < Transaction > "merchantId";
 // Error: Argument of type '"merchantId"' is not assignable to parameter of type 'keyof Transaction'
