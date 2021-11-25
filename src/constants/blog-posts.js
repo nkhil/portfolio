@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'Enforce that all keys in a map are a key of a certain type',
+    description: '',
+    path: '/enforce-keys-in-a-map-type-typescript',
+  },
+  {
     title: 'Convert an OpenSSH key into RSA PKCS1 format',
     description: 'Using the command line',
     path: '/convert-openssh-key-to-rsa-pkcs1',
@@ -82,6 +87,16 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'Enforce that all keys in a map are a key of a certain type',
+    description: '',
+    path: '/enforce-keys-in-a-map-type-typescript',
+  },
+  {
+    title: 'Convert an OpenSSH key into RSA PKCS1 format',
+    description: 'Using the command line',
+    path: '/convert-openssh-key-to-rsa-pkcs1',
+  },
   {
     title: 'How to redact sensitive information from logs',
     description: 'Using pino and pino-noir to redact things',
