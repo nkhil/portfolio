@@ -52,6 +52,6 @@ const secretIsValid = sh.validateHash({
 
 ## Background
 
-When I was working on [leaderboardapi.com](http://leaderboardapi.com/), I noticed I was sharing some helper functions between the Next.js project and the Heroku express.js project. Since the Next and express apps need to make sure they use the same functions, this was a great little use-case to abstract this into an npm package, and build something in Typescript, which I've been putting off for a while.
+When I was working on [my leaderboard API project](https://nikhilvijayan.com/leaderboard-api), I noticed I was sharing some helper functions between the Next.js project and the Heroku express.js project. Since the Next and express apps need to make sure they use the same functions, this was a great little use-case to abstract this into an npm package, and build something in Typescript, which I've been putting off for a while.
 
 The library uses Node's `crypto` module for creating hashes and api keys.
