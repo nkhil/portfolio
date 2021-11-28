@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import colours from '../constants/colours';
 
 const GridItem = ({ project, index, className }) => {
   const { path, title, description, src } = project;
