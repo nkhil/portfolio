@@ -1,5 +1,10 @@
 export const featuredBlogs = [
   {
+    title: 'RSA Encryption in nodejs',
+    description: 'with code samples',
+    path: '/rsa-encryption-in-nodejs',
+  },
+  {
     title: 'Enforce that all keys in a map are a key of a certain type',
     description: '',
     path: '/enforce-keys-in-a-map-type-typescript',
@@ -87,6 +92,11 @@ export const featuredBlogs = [
 ];
 
 export const allPosts = [
+  {
+    title: 'RSA Encryption in nodejs',
+    description: 'with code samples',
+    path: '/rsa-encryption-in-nodejs',
+  },
   {
     title: 'Enforce that all keys in a map are a key of a certain type',
     description: '',
