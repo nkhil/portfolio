@@ -47,10 +47,10 @@ export const featuredProjects = [
     src: secretHelper,
   },
   {
-    title: 'Raspberry pi weather display',
-    description: 'Laser-cut case to house a raspberry pi that fetches the weather and displays it on an e-ink display.',
-    path: '/raspberry-pi-zero-weather-display',
-    src: raspberry,
+    title: 'Spending tracker',
+    description: 'A lightweight spending tracker web app built using react',
+    path: '/spending-tracker',
+    src: spending,
   },
 ];
 
