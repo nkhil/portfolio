@@ -29,7 +29,7 @@
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.14.0",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.27.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-fade-in": "^2.0.1",
