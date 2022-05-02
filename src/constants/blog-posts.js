@@ -5,18 +5,38 @@ export const featuredBlogs = [
     path: '/rsa-encryption-in-nodejs',
   },
   {
+    title: 'Using Gauss summation to add numbers faster',
+    description: 'Evaluating time-space complexity of gauss summation',
+    path: '/gauss-summation-algorithmic-complexity',
+  },
+  {
     title: 'How to redact sensitive information from logs',
     description: 'Using pino and pino-noir to redact things',
     path: '/how-to-redact-sensitive-information-node-pino-noir',
+  },
+  {
+    title: 'Testing stdout in Node.js using Jest',
+    description: 'How to assert against stdout output in Node.js',
+    path: '/testing-stdout-in-node-js-jest',
   },
   {
     title: 'Using Swagger 3.0 for request & response validation',
     description: 'quick tutorial on setting up a simple express service using swagger 3.0',
     path: '/open-api-swagger-3-setup',
   },
+  {
+    title: 'How mutating state can lead to bugs in software',
+    description: 'Some examples of how mutating state can introduce unexpected bugs',
+    path: '/functional-programming-mutating-state-bugs',
+  },
 ];
 
 export const allPosts = [
+  {
+    title: 'Using Gauss summation to add numbers faster',
+    description: 'Evaluating time-space complexity of gauss summation',
+    path: '/gauss-summation-algorithmic-complexity',
+  },
   {
     title: 'RSA Encryption in nodejs',
     description: 'with code samples',
