@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaTwitter, FaLinkedinIn, FaCodepen, FaMedium, FaStackOverflow } from 'react-icons/fa';
-import Emoji from 'a11y-react-emoji';
+import { FaGithub, FaLinkedinIn, FaCodepen, FaMedium, FaStackOverflow } from 'react-icons/fa';
 import width from '../../constants/width';
 import FooterIcon from './FooterIcon';
 import urls from '../../constants/footer-URLs';
@@ -16,7 +15,6 @@ function Footer({ className }) {
           <FooterIcon icon={FaLinkedinIn} url={urls.linkedin} />
           <FooterIcon icon={FaMedium} url={urls.medium} />
           <FooterIcon icon={FaCodepen} url={urls.codepen} />
-          <FooterIcon icon={FaTwitter} url={urls.twitter} />
           <FooterIcon icon={FaStackOverflow} url={urls.stackOverflow} />
         </div>
         <p>
